@@ -23,12 +23,7 @@ jobs:
 
       - name: Install packages
         run: |
-          rm /root/.bashrc
-          touch /root/.bashrc
-          echo '' > /etc/bash.bashrc
-          echo 'PS1="\\[\\e[38;5;39m\\]╭─\\[\\e[38;5;39m\\][\\[\\e[38;5;220m\\]server14\\[\\e[38;5;39m\\]@\\[\\e[38;5;83m\\]gamedreams.eu\\[\\e[38;5;39m\\]]─[\\[\\e[38;5;208m\\]\\w\\[\\e[38;5;39m\\]]\\n\\[\\e[38;5;39m\\]╰─\\[\\e[38;5;208m\\]λ\\[\\e[0m\\] "' > /etc/bash.bashrc
-          echo 'cd /root' >> /etc/bash.bashrc
-          source /etc/bash.bashrc
+          echo 'PS1="\\[\\e[38;5;39m\\]╭─\\[\\e[38;5;39m\\][\\[\\e[38;5;220m\\]server14\\[\\e[38;5;39m\\]@\\[\\e[38;5;83m\\]gamedreams.eu\\[\\e[38;5;39m\\]]─[\\[\\e[38;5;208m\\]\\w\\[\\e[38;5;39m\\]]\\n\\[\\e[38;5;39m\\]╰─\\[\\e[38;5;208m\\]λ\\[\\e[0m\\] "' >> /root/.bashrc
 
           sudo apt-get update
           sudo apt-get install -y fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
