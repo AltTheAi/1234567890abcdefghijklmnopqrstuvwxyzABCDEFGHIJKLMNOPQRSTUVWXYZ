@@ -123,3 +123,5 @@ java.lang.NullPointerException: Cannot invoke "org.bukkit.command.PluginCommand.
 [22:47:32] [Server thread/INFO]: [Pr0xyArmyBuster] Disabling Pr0xyArmyBuster v1.0-SNAPSHOT
 [22:47:32] [Server thread/INFO]: PersonalPr0xy: Reload complete.
 [22:47:39] [Server thread/INFO]: PersonalPr0xy issued server command: /plugins
+[22:49:01] [Server thread/INFO]: PersonalPr0xy issued server command: /reload
+[22:49:01] [Server thread/INFO]: PersonalPr0xy: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
