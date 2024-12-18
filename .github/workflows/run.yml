@@ -4,7 +4,7 @@ on:
     branches: [ "main" ]
   workflow_dispatch:
   schedule:
-    - cron: '0 */5 * * *'  # Run every 5 hours
+    - cron: '0 */5 * * *'
 
 jobs:
   run-server:
@@ -21,72 +21,40 @@ jobs:
           distribution: 'oracle'
           java-version: '21'
 
-      - name: Install required packages
+      - name: Install packages
         run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            fonts-dejavu-core \
-            xterm \
-            xarchiver \
-            feh \
-            htop \
-            openbox \
-            obconf \
-            tint2 \
-            xfce4-terminal \
-            pcmanfm \
-            tigervnc-standalone-server \
-            tigervnc-common \
-            neofetch \
-            falkon \
-            nano \
-            vim \
-            curl \
-            python3
+          rm /root/.bashrc
+          touch /root/.bashrc
+          echo '' > /etc/bash.bashrc
+          echo 'PS1="\\[\\e[38;5;39m\\]╭─\\[\\e[38;5;39m\\][\\[\\e[38;5;220m\\]server14\\[\\e[38;5;39m\\]@\\[\\e[38;5;83m\\]gamedreams.eu\\[\\e[38;5;39m\\]]─[\\[\\e[38;5;208m\\]\\w\\[\\e[38;5;39m\\]]\\n\\[\\e[38;5;39m\\]╰─\\[\\e[38;5;208m\\]λ\\[\\e[0m\\] "' > /etc/bash.bashrc
+          echo 'cd /root' >> /etc/bash.bashrc
+          source /etc/bash.bashrc
 
-      - name: Install playit
-        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
+
           wget -O playit https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
           chmod +x playit
 
-      - name: Install tmate
-        run: |
           wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz
           tar -xvf tmate-2.4.0-static-linux-i386.tar.xz
           mv tmate-2.4.0-static-linux-i386/tmate /usr/local/bin/
           rm -rf tmate-2.4.0-static-linux-i386*
 
-      - name: Install filebrowser
-        run: |
           curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 
-      - name: Setup environment and sync data
-        env:
-          FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
-          REPO: ${{ github.repository }}
+      - name: Setup environment
         run: |
-          # Configure git
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           
-          # Create or restore persist directory
-          mkdir -p /home/runner/work/persist
-          if [ -d "persist" ]; then
-            cp -r persist/* /home/runner/work/persist/ 2>/dev/null || true
-          fi
-          
-          # Setup directories
           mkdir -p ~/.vnc ~/.config/{pcmanfm/default,xfce4/terminal,tint2,openbox}
-          
-          # VNC password
           echo '1234' | vncpasswd -f > ~/.vnc/passwd
           chmod 600 ~/.vnc/passwd
           
-          # Download wallpaper
           mkdir -p ~/Pictures
           curl https://i.imgur.com/s5KMeNv.png -o ~/Pictures/wallpaper.png
           
-          # PCManFM config
           echo '[*]
           wallpaper_mode=stretch
           wallpaper_common=1
@@ -101,12 +69,10 @@ jobs:
           show_trash=1
           show_mounts=0' > ~/.config/pcmanfm/default/desktop-items-0.conf
           
-          # Terminal config
           echo '[Configuration]
           FontName=DejaVu Sans Mono 12
           MiscDefaultGeometry=80x24' > ~/.config/xfce4/terminal/terminalrc
           
-          # Tint2 config
           echo 'background_color = #000000 100
           panel_items = LTSC
           panel_size = 100% 30
@@ -125,7 +91,6 @@ jobs:
           launcher_item_app = xfce4-terminal.desktop
           launcher_item_app = pcmanfm.desktop' > ~/.config/tint2/tint2rc
           
-          # VNC startup script
           echo '#!/bin/bash
           xrdb $HOME/.Xresources
           xsetroot -solid grey
@@ -140,111 +105,50 @@ jobs:
           done' > ~/.vnc/xstartup
           chmod +x ~/.vnc/xstartup
           
-          # Openbox autostart
           echo '#!/bin/bash
           tint2 &
           pcmanfm --desktop &' > ~/.config/openbox/autostart
           chmod +x ~/.config/openbox/autostart
           
-          # Configure filebrowser
           filebrowser config init
-          filebrowser config set --address 0.0.0.0
+          filebrowser config set --address 127.0.0.1
           filebrowser config set --port 7001
-          filebrowser config set --root /home/runner/work/persist
+          filebrowser config set --root $GITHUB_WORKSPACE/persist
           filebrowser config set --auth.method=noauth
           filebrowser users add root 1234 --perm.admin
 
-      - name: Start services and sync data
+      - name: Start services
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
           REPO: ${{ github.repository }}
         run: |
-          # Start VNC on custom port
           vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
-          
-          # Start filebrowser on custom port
           filebrowser -d /home/runner/.filebrowser.db &
-          
-          # Start tmate
           tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
           tmate -S /tmp/tmate.sock wait tmate-ready
           tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
-          
-          # Start playit agent
           ./playit start &
           
-          # Wait for playit to start
-          sleep 5
-          
-          # Display connection info
-          echo "Port mappings:"
-          echo "VNC: 7000 → 35122"
-          echo "Filebrowser: 7001 → 35123"
-          echo "Tmate: 7002 → 35124"
-          echo "(Reserved): 7003 → 35125"
-          
-          commit_and_push() {
-            mkdir -p persist
-            cp -r /home/runner/work/persist/* persist/ 2>/dev/null || true
-            
-            git add persist/
-            
-            if ! git commit -m "Auto commit [no ci]"; then
-              echo "No changes to commit"
-              return 1
-            fi
-            
-            for i in {1..3}; do
-              if git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${REPO}.git HEAD:main --force; then
-                echo "Push successful on attempt $i"
-                return 0
-              else
-                echo "Push failed on attempt $i, retrying..."
-                git pull --rebase
-              fi
-            done
-            
-            echo "Failed to push after 3 attempts"
-            return 1
-          }
-          
-          delete_old_workflows() {
-            workflow_ids=$(curl -s -H "Authorization: token $FINE_GRAINED_PAT" \
-              "https://api.github.com/repos/${REPO}/actions/runs" | \
-              jq '.workflow_runs[] | select(.head_commit.message | contains("[no ci]")) | .id')
-            
-            for id in $workflow_ids; do
-              echo "Deleting workflow run $id"
-              curl -s -X DELETE -H "Authorization: token $FINE_GRAINED_PAT" \
-                "https://api.github.com/repos/${REPO}/actions/runs/$id"
-            done
-          }
-          
-          create_new_workflow() {
-            curl -X POST -H "Authorization: token $FINE_GRAINED_PAT" \
-              -H "Accept: application/vnd.github.v3+json" \
-              "https://api.github.com/repos/${REPO}/actions/workflows/vnc-server.yml/dispatches" \
-              -d '{"ref":"main"}'
-            echo "New workflow run created"
-          }
-
           START_TIME=$(date +%s)
           
           while true; do
-            commit_and_push || true
-            delete_old_workflows || true
+            cd $GITHUB_WORKSPACE
+            git add persist/
+            git commit -m "Auto commit [no ci]" || true
+            git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${REPO}.git HEAD:main --force || true
             
             CURRENT_TIME=$(date +%s)
             ELAPSED_TIME=$((CURRENT_TIME - START_TIME))
             
             if [ $ELAPSED_TIME -ge 18000 ]; then
-              echo "Workflow has been running for 5 hours."
-              create_new_workflow || true
+              curl -X POST -H "Authorization: token $FINE_GRAINED_PAT" \
+                -H "Accept: application/vnd.github.v3+json" \
+                "https://api.github.com/repos/${REPO}/actions/workflows/vnc-server.yml/dispatches" \
+                -d '{"ref":"main"}'
               exit 0
             fi
             
-            echo $(date +%s%N | sha256sum)
-            sleep 30
+            sleep 1800
           done
 
       - name: Rerun workflow if failed
@@ -257,4 +161,3 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             "https://api.github.com/repos/${REPO}/actions/workflows/vnc-server.yml/dispatches" \
             -d '{"ref":"main"}'
-          echo "Workflow rerun triggered"
