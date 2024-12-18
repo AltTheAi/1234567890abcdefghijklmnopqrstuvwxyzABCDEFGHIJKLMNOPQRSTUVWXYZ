@@ -116,56 +116,96 @@ jobs:
           filebrowser users add runner 1234 --perm.admin -d ~/.filebrowser.db
 
       - name: Start services
-        env:
-          FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
-          PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
-          REPO: ${{ github.repository }}
-        run: |
-          vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
-          filebrowser -d ~/.filebrowser.db &          
-          tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
-          tmate -S /tmp/tmate.sock wait tmate-ready
-          tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
+       env:
+         FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
+         PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
+         REPO: ${{ github.repository }}
+       run: |
+         start_vnc() {
+           vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
+         }
 
-          echo "$PLAYIT_SECRET" > ~/playit.toml
-          cd && ./playit-linux-amd64 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
-          PLAYIT_PID=$!
-          echo "playit started with PID $PLAYIT_PID"
-          
-          START_TIME=$(date +%s)
-          
-          check_processes() {
-            if ! kill -0 $PLAYIT_PID 2>/dev/null; then
-              echo "Playit process died, restarting..."
-              cd && ./playit-linux-amd64 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
-              PLAYIT_PID=$!
-            fi
-          }
+         start_paper() {
+           cd $GITHUB_WORKSPACE/persist/paper
+           java -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -Xms16G -Xmx16G -jar paper.jar nogui 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
+           PAPER_PID=$!
+           echo "Paper started with PID $PAPER_PID"
+         }
 
-          while true; do
-            check_processes
-            
-            cd $GITHUB_WORKSPACE
-            git add persist/
-            git commit -m "Auto commit [no ci]" || true
-            git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${REPO}.git HEAD:main --force || true
-            
-            CURRENT_TIME=$(date +%s)
-            ELAPSED_TIME=$((CURRENT_TIME - START_TIME))
-            
-            if [ $ELAPSED_TIME -ge 18000 ]; then
-              curl -X POST -H "Authorization: token $FINE_GRAINED_PAT" \
-                -H "Accept: application/vnd.github.v3+json" \
-                "https://api.github.com/repos/${REPO}/actions/workflows/vnc-server.yml/dispatches" \
-                -d '{"ref":"main"}'
-              exit 0
-            fi
-            
-            for i in {1..60}; do
-              sleep 30
-              check_processes
-            done
-          done
+         start_playit() {
+           echo "$PLAYIT_SECRET" > ~/playit.toml
+           cd && ./playit-linux-amd64 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
+           PLAYIT_PID=$!
+           echo "Playit started with PID $PLAYIT_PID"
+         }
+
+         start_filebrowser() {
+           filebrowser -d ~/.filebrowser.db &
+           FB_PID=$!
+           echo "Filebrowser started with PID $FB_PID"
+         }
+
+         start_tmate() {
+           tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
+           tmate -S /tmp/tmate.sock wait tmate-ready
+           tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
+           TMATE_PID=$!
+           echo "Tmate started with PID $TMATE_PID"
+         }
+
+         commit_and_push() {
+           cd $GITHUB_WORKSPACE
+           git add persist/
+           git commit -m "Auto commit [no ci]" || true
+           
+           for i in {1..3}; do
+               if git push https://x-access-token:${FINE_GRAINED_PAT}@github.com/${REPO}.git HEAD:main --force; then
+                   echo "Push successful on attempt $i"
+                   return 0
+               else
+                   echo "Push failed on attempt $i, retrying..."
+                   git pull --rebase
+               fi
+           done
+           return 1
+         }
+
+         start_vnc
+         start_paper
+         start_playit
+         start_filebrowser
+         start_tmate
+         
+         START_TIME=$(date +%s)
+         
+         while true; do
+           if ! kill -0 $PAPER_PID 2>/dev/null; then
+             start_paper
+           fi
+
+           if ! kill -0 $PLAYIT_PID 2>/dev/null; then
+             start_playit
+           fi
+
+           if ! kill -0 $TMATE_PID 2>/dev/null; then
+             start_tmate
+           fi
+
+           commit_and_push
+
+           CURRENT_TIME=$(date +%s)
+           ELAPSED_TIME=$((CURRENT_TIME - START_TIME))
+           
+           if [ $ELAPSED_TIME -ge 18000 ]; then
+             curl -X POST -H "Authorization: token $FINE_GRAINED_PAT" \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/repos/${REPO}/actions/workflows/vnc-server.yml/dispatches" \
+               -d '{"ref":"main"}'
+             exit 0
+           fi
+           
+           sleep 30
+         done
 
       - name: Rerun workflow if failed
         if: failure()
