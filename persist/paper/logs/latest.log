@@ -187,3 +187,34 @@ java.lang.NullPointerException: Cannot invoke "org.bukkit.command.PluginCommand.
 [22:49:07] [Server thread/INFO]: PersonalPr0xy issued server command: /plugins
 [22:49:15] [Server thread/INFO]: PersonalPr0xy issued server command: /help Pr0xyArmyBuster
 [22:49:29] [Server thread/INFO]: PersonalPr0xy issued server command: /help Pr0xyArmyBuster 2
+[22:49:48] [Server thread/INFO]: PersonalPr0xy issued server command: /commands
+[22:49:48] [Server thread/ERROR]: Command exception: /commands
+org.bukkit.command.CommandException: Cannot execute command 'commands' in plugin Pr0xyArmyBuster v1.0-SNAPSHOT - plugin is disabled.
+	at org.bukkit.command.PluginCommand.execute(PluginCommand.java:37) ~[paper-api-1.21.3-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:82) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:31) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:103) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:448) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:355) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:342) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:337) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2241) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$11(ServerGamePacketListenerImpl.java:2215) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:154) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1578) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:207) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:128) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1555) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1548) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:138) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1499) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1509) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1345) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:340) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
