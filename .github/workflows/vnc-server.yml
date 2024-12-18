@@ -52,7 +52,7 @@ jobs:
           chmod 600 ~/.vnc/passwd
           
           mkdir -p ~/Pictures
-          curl https://i.imgur.com/s5KMeNv.png -o ~/Pictures/wallpaper.png
+          curl https://i.imgur.com/WjEkMGx.png -o ~/Pictures/wallpaper.png
           
           echo '[*]
           wallpaper_mode=stretch
@@ -108,6 +108,9 @@ jobs:
           tint2 &
           pcmanfm --desktop &' > ~/.config/openbox/autostart
           chmod +x ~/.config/openbox/autostart
+
+          mkdir -p ~/.config/playit_gg
+          echo "${{ secrets.PLAYIT_SECRET }}" > ~/.config/playit_gg/playit.toml
           
           filebrowser config init -d ~/.filebrowser.db
           filebrowser config set -d ~/.filebrowser.db --address 127.0.0.1
