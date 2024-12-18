@@ -59,3 +59,5 @@
 [22:33:15] [User Authenticator #0/INFO]: UUID of player PersonalPr0xy is 805c5f03-6960-381d-81dc-d4138ab3b758
 [22:33:17] [Server thread/INFO]: PersonalPr0xy joined the game
 [22:33:17] [Server thread/INFO]: PersonalPr0xy[/127.13.42.148:34627] logged in with entity id 24 at ([world]9.5, 63.0, -2.5)
+[22:33:31] [Server thread/INFO]: PersonalPr0xy issued server command: /plugins
+[22:33:40] [Server thread/INFO]: PersonalPr0xy issued server command: /help Pr0xyArmyBuster
