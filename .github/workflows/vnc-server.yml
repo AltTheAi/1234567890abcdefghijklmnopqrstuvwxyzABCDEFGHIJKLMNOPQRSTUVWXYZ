@@ -32,6 +32,7 @@ jobs:
           sudo apt-get install -y fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
 
           wget -O playit https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
+          chmod +x playit
           mv playit /usr/local/bin/
 
           wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz
@@ -109,9 +110,9 @@ jobs:
           chmod +x ~/.config/openbox/autostart
           
           filebrowser config init -d ~/.filebrowser.db
-          filebrowser config set -d ~/.filebrowser.db --address 0.0.0.0
-          filebrowser config set -d ~/.filebrowser.db --port 9090
-          filebrowser config set -d ~/.filebrowser.db --root /
+          filebrowser config set -d ~/.filebrowser.db --address 127.0.0.1
+          filebrowser config set -d ~/.filebrowser.db --port 7001
+          filebrowser config set -d ~/.filebrowser.db --root ~/
           filebrowser config set -d ~/.filebrowser.db --auth.method=noauth
           filebrowser users add runner 1234 --perm.admin -d ~/.filebrowser.db
 
