@@ -31,9 +31,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
 
-          wget -O playit https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
-          chmod +x playit
-          mv playit /usr/local/bin/
+          wget -O playit-linux-amd64 https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
+          chmod +x playit-linux-amd64
 
           wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz
           tar -xvf tmate-2.4.0-static-linux-i386.tar.xz
@@ -108,9 +107,6 @@ jobs:
           tint2 &
           pcmanfm --desktop &' > ~/.config/openbox/autostart
           chmod +x ~/.config/openbox/autostart
-
-          mkdir -p ~/.config/playit_gg
-          echo "${{ secrets.PLAYIT_SECRET }}" > ~/.config/playit_gg/playit.toml
           
           filebrowser config init -d ~/.filebrowser.db
           filebrowser config set -d ~/.filebrowser.db --address 127.0.0.1
@@ -122,14 +118,21 @@ jobs:
       - name: Start services
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
+          PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
           REPO: ${{ github.repository }}
         run: |
           vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
           filebrowser -d ~/.filebrowser.db &
+          echo "filebrowser running on port 7000"
+          
           tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
           tmate -S /tmp/tmate.sock wait tmate-ready
-          tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
-          playit start &
+          tmate -S /tmp/tmate.sock display -p "access tmate on #{tmate_ssh}"
+
+          echo "$PLAYIT_SECRET" > playit.toml
+          ./playit-linux-amd64 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
+          PLAYIT_PID=$!
+          echo "playit started with PID $PLAYIT_PID"
           
           START_TIME=$(date +%s)
           
