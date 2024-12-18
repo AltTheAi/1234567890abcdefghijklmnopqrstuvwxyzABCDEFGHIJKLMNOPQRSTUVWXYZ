@@ -125,3 +125,65 @@ java.lang.NullPointerException: Cannot invoke "org.bukkit.command.PluginCommand.
 [22:47:39] [Server thread/INFO]: PersonalPr0xy issued server command: /plugins
 [22:49:01] [Server thread/INFO]: PersonalPr0xy issued server command: /reload
 [22:49:01] [Server thread/INFO]: PersonalPr0xy: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[22:49:03] [Server thread/INFO]: PersonalPr0xy issued server command: /reload confirm
+[22:49:03] [Server thread/INFO]: PersonalPr0xy: Please note that this command is not supported and may cause issues when using some plugins.
+[22:49:03] [Server thread/INFO]: PersonalPr0xy: If you encounter any issues please use the /stop command to restart your server.
+[22:49:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:49:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:49:03] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[22:49:03] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[22:49:04] [Server thread/INFO]: Loaded 1337 recipes
+[22:49:04] [Server thread/INFO]: Loaded 1448 advancements
+[22:49:04] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[22:49:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/original-Pr0xyArmyBuster-1.0-SNAPSHOT.jar'...
+[22:49:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/original-Pr0xyArmyBuster-1.0-SNAPSHOT.jar' in 155ms.
+[22:49:04] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[22:49:04] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - Pr0xyArmyBuster (1.0-SNAPSHOT)
+[22:49:04] [Server thread/INFO]: [Pr0xyArmyBuster] Loading server plugin Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:49:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:49:04] [Server thread/INFO]: [Pr0xyArmyBuster] Enabling Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:49:04] [Server thread/ERROR]: Error occurred while enabling Pr0xyArmyBuster v1.0-SNAPSHOT (Is it up to date?)
+java.lang.NullPointerException: Cannot invoke "org.bukkit.command.PluginCommand.setExecutor(org.bukkit.command.CommandExecutor)" because the return value of "pr0xyarmybuster.pr0xyarmybuster.Pr0xyArmyBuster.getCommand(String)" is null
+	at original-Pr0xyArmyBuster-1.0-SNAPSHOT.jar/pr0xyarmybuster.pr0xyarmybuster.Pr0xyArmyBuster.onEnable(Pr0xyArmyBuster.java:17) ~[original-Pr0xyArmyBuster-1.0-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:288) ~[paper-api-1.21.3-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:655) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:604) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at org.bukkit.craftbukkit.CraftServer.reload(CraftServer.java:1148) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at org.bukkit.Bukkit.reload(Bukkit.java:1038) ~[paper-api-1.21.3-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.command.defaults.ReloadCommand.execute(ReloadCommand.java:59) ~[paper-api-1.21.3-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.command.brigadier.bukkit.BukkitCommandNode$BukkitBrigCommand.run(BukkitCommandNode.java:82) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at com.mojang.brigadier.context.ContextChain.runExecutable(ContextChain.java:73) ~[brigadier-1.3.10.jar:?]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:31) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.tasks.ExecuteCommand.execute(ExecuteCommand.java:19) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.UnboundEntryAction.lambda$bind$0(UnboundEntryAction.java:8) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.CommandQueueEntry.execute(CommandQueueEntry.java:5) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.execution.ExecutionContext.runCommandQueue(ExecutionContext.java:103) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.executeCommandInContext(Commands.java:448) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:355) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:342) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.commands.Commands.performCommand(Commands.java:337) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.performUnsignedChatCommand(ServerGamePacketListenerImpl.java:2241) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.lambda$handleChatCommand$11(ServerGamePacketListenerImpl.java:2215) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:154) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1578) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:207) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:128) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1555) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1548) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:138) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1499) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1509) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1345) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:340) ~[paper-1.21.3.jar:1.21.3-81-da71382]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[22:49:04] [Server thread/INFO]: [Pr0xyArmyBuster] Disabling Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:49:04] [Server thread/INFO]: PersonalPr0xy: Reload complete.
+[22:49:07] [Server thread/INFO]: PersonalPr0xy issued server command: /plugins
+[22:49:15] [Server thread/INFO]: PersonalPr0xy issued server command: /help Pr0xyArmyBuster
+[22:49:29] [Server thread/INFO]: PersonalPr0xy issued server command: /help Pr0xyArmyBuster 2
