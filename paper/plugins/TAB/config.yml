@@ -7,7 +7,7 @@ header-footer:
   - ''
   footer:
   - ''
-  - '&fʏᴏᴜʀɴᴇᴛᴡᴏʀᴋ.xʏᴢ'
+  - '&fɢᴀᴍᴇᴅʀᴇᴀᴍs.ᴇᴜ'
   - '&a&m                                                       '
   per-world:
     world1:
@@ -58,7 +58,7 @@ bossbar:
       style: PROGRESS
       color: '%animation:barcolors%'
       progress: '100'
-      text: '&fWebsite: &awww.domain.com'
+      text: '&fWebsite: &awww.gamedreams.eu'
 placeholders:
   date-format: dd.MM.yyyy
   time-format: '[HH:mm:ss / h:mm a]'
@@ -153,7 +153,7 @@ scoreboard:
       - ' #44F800&l$ &fMoney: &a%vault_eco_balance_formatted%'
       - ' #F8DF00⌚ &fPlaytime: &a%statistic_days_played%d %statistic_hours_played%h'
       - ''
-      - '&fʏᴏᴜʀɴᴇᴛᴡᴏʀᴋ.xʏᴢ'
+      - '&fɢᴀᴍᴇᴅʀᴇᴀᴍs.ᴇᴜ'
   toggle-command: /sb
   use-numbers: false
   remember-toggle-choice: false
