@@ -56,3 +56,9 @@
 [22:45:11] [Server thread/INFO]: RCON running on 0.0.0.0:7003
 [22:45:11] [Server thread/INFO]: Running delayed init tasks
 [22:45:11] [Server thread/INFO]: Done (11.188s)! For help, type "help"
+[22:47:19] [User Authenticator #0/INFO]: UUID of player PersonalPr0xy is 805c5f03-6960-381d-81dc-d4138ab3b758
+[22:47:20] [Server thread/INFO]: PersonalPr0xy joined the game
+[22:47:21] [Server thread/INFO]: PersonalPr0xy[/127.13.42.148:50299] logged in with entity id 161 at ([world]-10.699999988079071, 67.2185925854712, -12.699999988079071)
+[22:47:25] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: 8f177a0b-6886-493a-8a8d-d40c65d95505, mapped to Turtle['Turtle'/307, uuid='8f177a0b-6886-493a-8a8d-d40c65d95505', l='ServerLevel[world]', x=80.04, y=57.12, z=-145.72, cpos=[5, -10], tl=5915, v=true], can't add Turtle['Turtle'/322, uuid='8f177a0b-6886-493a-8a8d-d40c65d95505', l='ServerLevel[world]', x=81.20, y=57.26, z=-160.24, cpos=[5, -11], tl=6188, v=false]
+[22:47:27] [Server thread/INFO]: PersonalPr0xy issued server command: /reload
+[22:47:27] [Server thread/INFO]: PersonalPr0xy: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
