@@ -1493,3 +1493,47 @@
 [22:38:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=0.8195140324613487,y=65.11293558473194,z=-32.69999998807907,pitch=3.4498975,yaw=-12.299366}
 [22:38:00] [Server thread/INFO]: Total blocks changed: 0
 [22:38:00] [Server thread/INFO]: Storm set in world.
+[22:38:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=1.3605878521742523,y=65.11293558473194,z=-33.63014274609479,pitch=7.0498977,yaw=-51.149384}
+[22:38:03] [Server thread/INFO]: Total blocks changed: 0
+[22:38:03] [Server thread/INFO]: Storm set in world.
+[22:38:12] [Server thread/INFO]: PersonalPr0xy issued server command: /reload
+[22:38:12] [Server thread/INFO]: PersonalPr0xy: Are you sure you wish to reload your server? Doing so may cause bugs and memory leaks. It is recommended to restart instead of using /reload. To confirm, please type /reload confirm
+[22:38:18] [Server thread/INFO]: PersonalPr0xy issued server command: /reload confim
+[22:38:18] [Server thread/INFO]: PersonalPr0xy: Usage: /reload [permissions|commands|confirm]
+[22:38:19] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=0.8827283787822428,y=65.11293558473194,z=-32.68532697148942,pitch=7.0498977,yaw=-51.149384}
+[22:38:19] [Server thread/INFO]: Total blocks changed: 0
+[22:38:19] [Server thread/INFO]: Storm set in world.
+[22:38:20] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=0.30000001192092896,y=65.11293558473194,z=-31.848642496450463,pitch=7.0498977,yaw=-51.149384}
+[22:38:20] [Server thread/INFO]: Total blocks changed: 0
+[22:38:20] [Server thread/INFO]: Storm set in world.
+[22:38:21] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=1.334919075844604,y=65.11293558473194,z=-32.22100728626636,pitch=7.0498977,yaw=-51.149384}
+[22:38:21] [Server thread/INFO]: Total blocks changed: 0
+[22:38:21] [Server thread/INFO]: Storm set in world.
+[22:38:22] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.3095727402009243,y=65.11293558473194,z=-32.55699699159586,pitch=7.0498977,yaw=-51.149384}
+[22:38:22] [Server thread/INFO]: Total blocks changed: 0
+[22:38:22] [Server thread/INFO]: Storm set in world.
+[22:38:28] [Server thread/INFO]: PersonalPr0xy issued server command: /reload confirm
+[22:38:28] [Server thread/INFO]: PersonalPr0xy: Please note that this command is not supported and may cause issues when using some plugins.
+[22:38:28] [Server thread/INFO]: PersonalPr0xy: If you encounter any issues please use the /stop command to restart your server.
+[22:38:28] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:38:28] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:38:28] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[22:38:28] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[22:38:28] [Server thread/INFO]: [Pr0xyArmyBuster] Disabling Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:38:29] [Server thread/INFO]: Loaded 1337 recipes
+[22:38:29] [Server thread/INFO]: Loaded 1448 advancements
+[22:38:29] [Server thread/INFO]: [PluginInitializerManager] Initializing plugins...
+[22:38:29] [Server thread/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[22:38:29] [Server thread/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - Pr0xyArmyBuster (1.0-SNAPSHOT)
+[22:38:29] [Server thread/INFO]: [Pr0xyArmyBuster] Loading server plugin Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:38:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:38:29] [Server thread/INFO]: [Pr0xyArmyBuster] Enabling Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:38:29] [Server thread/INFO]: [Pr0xyArmyBuster] §c _____                     _           
+§a|     |___ ___ ___ ___ ___| |_ ___ ___ 
+§c| | | | -_|   | -_| . | .'|  _| . |  _|
+§a|_|_|_|___|_|_|___|_  |__,|_| |___|_|  
+§cㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ|___|                
+[22:38:29] [Server thread/INFO]: [Pr0xyArmyBuster] 
+[22:38:29] [Server thread/INFO]: [Pr0xyArmyBuster] §5ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤMade by PersonalPr0xy & Zerx
+[22:38:29] [Server thread/INFO]: PersonalPr0xy: Reload complete.
