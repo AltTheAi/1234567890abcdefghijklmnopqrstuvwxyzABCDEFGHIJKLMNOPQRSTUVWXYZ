@@ -1,0 +1,176 @@
+name: VNC Server
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */5 * * *'  # Run every 5 hours
+
+jobs:
+  run-server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'oracle'
+          java-version: '21'
+
+      - name: Install required packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            fonts-dejavu-core \
+            xterm \
+            xarchiver \
+            feh \
+            htop \
+            openbox \
+            obconf \
+            tint2 \
+            xfce4-terminal \
+            pcmanfm \
+            tigervnc-standalone-server \
+            tigervnc-common \
+            neofetch \
+            falkon \
+            nano \
+            vim \
+            curl \
+            python3
+
+      - name: Install ngrok
+        run: |
+          curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /usr/share/keyrings/ngrok-archive-keyring.asc >/dev/null
+          echo "deb [signed-by=/usr/share/keyrings/ngrok-archive-keyring.asc] https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
+          sudo apt-get update
+          sudo apt-get install -y ngrok
+
+      - name: Install filebrowser
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+
+      - name: Setup environment
+        run: |
+          # Setup directories
+          mkdir -p /home/runner/work/persist
+          mkdir -p ~/.vnc ~/.config/{pcmanfm/default,xfce4/terminal,tint2,openbox,ngrok}
+          
+          # VNC password
+          echo '1234' | vncpasswd -f > ~/.vnc/passwd
+          chmod 600 ~/.vnc/passwd
+          
+          # Download wallpaper
+          mkdir -p ~/Pictures
+          curl https://i.imgur.com/s5KMeNv.png -o ~/Pictures/wallpaper.png
+          
+          # PCManFM config
+          echo '[*]
+          wallpaper_mode=stretch
+          wallpaper_common=1
+          wallpaper=/home/runner/Pictures/wallpaper.png
+          desktop_bg=#000000
+          desktop_fg=#ffffff
+          desktop_shadow=#000000
+          desktop_font=Sans 12
+          show_wm_menu=0
+          sort=mtime;ascending;
+          show_documents=0
+          show_trash=1
+          show_mounts=0' > ~/.config/pcmanfm/default/desktop-items-0.conf
+          
+          # Terminal config
+          echo '[Configuration]
+          FontName=DejaVu Sans Mono 12
+          MiscDefaultGeometry=80x24' > ~/.config/xfce4/terminal/terminalrc
+          
+          # Tint2 config
+          echo 'background_color = #000000 100
+          panel_items = LTSC
+          panel_size = 100% 30
+          panel_position = bottom center horizontal
+          taskbar_name = 1
+          taskbar_name_padding = 4
+          taskbar_name_background_id = 0
+          taskbar_name_font = sans 9
+          taskbar_mode = single_desktop
+          taskbar_padding = 0 0 2
+          task_maximum_size = 150 30
+          task_padding = 2 2
+          launcher_padding = 2 2
+          launcher_icon_size = 24
+          launcher_item_app = org.kde.falkon.desktop
+          launcher_item_app = xfce4-terminal.desktop
+          launcher_item_app = pcmanfm.desktop' > ~/.config/tint2/tint2rc
+          
+          # VNC startup script
+          echo '#!/bin/bash
+          xrdb $HOME/.Xresources
+          xsetroot -solid grey
+          export XKL_XMODMAP_DISABLE=1
+          openbox-session &
+          tint2 &
+          pcmanfm --desktop &
+          falkon --no-sandbox &
+          xfce4-terminal &
+          while true; do
+             sleep 60
+          done' > ~/.vnc/xstartup
+          chmod +x ~/.vnc/xstartup
+          
+          # Openbox autostart
+          echo '#!/bin/bash
+          tint2 &
+          pcmanfm --desktop &' > ~/.config/openbox/autostart
+          chmod +x ~/.config/openbox/autostart
+
+          # Configure ngrok
+          echo "version: 2
+          tunnels:
+            vnc:
+              proto: tcp
+              addr: 5901
+            filebrowser:
+              proto: tcp
+              addr: 9090
+            minecraft:
+              proto: tcp
+              addr: 25565" > ~/.config/ngrok/ngrok.yml
+          
+          # Configure filebrowser
+          filebrowser config init
+          filebrowser config set --address 0.0.0.0
+          filebrowser config set --port 9090
+          filebrowser config set --root /home/runner/work/persist
+          filebrowser config set --auth.method=noauth
+          filebrowser users add root 1234 --perm.admin
+
+      - name: Configure ngrok
+        env:
+          NGROK_AUTHTOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
+        run: |
+          ngrok config add-authtoken $NGROK_AUTHTOKEN
+          
+      - name: Start services
+        run: |
+          # Start VNC
+          vncserver :1 -geometry 1280x800 -depth 24
+          
+          # Start filebrowser
+          filebrowser -d /home/runner/.filebrowser.db &
+          
+          # Start ngrok tunnels
+          ngrok start --all --log=stdout &
+          
+          # Keep the action running
+          python3 -c "
+          import time, random, hashlib
+          while True:
+              print(hashlib.sha256(str(random.randint(1, 999999999)).encode()).hexdigest())
+              time.sleep(random.uniform(5.0, 10.0))
+          "
