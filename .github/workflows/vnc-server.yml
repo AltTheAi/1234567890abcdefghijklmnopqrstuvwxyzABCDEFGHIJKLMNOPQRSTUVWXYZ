@@ -134,7 +134,17 @@ jobs:
           
           START_TIME=$(date +%s)
           
+          check_processes() {
+            if ! kill -0 $PLAYIT_PID 2>/dev/null; then
+              echo "Playit process died, restarting..."
+              cd && ./playit-linux-amd64 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
+              PLAYIT_PID=$!
+            fi
+          }
+
           while true; do
+            check_processes
+            
             cd $GITHUB_WORKSPACE
             git add persist/
             git commit -m "Auto commit [no ci]" || true
@@ -151,7 +161,10 @@ jobs:
               exit 0
             fi
             
-            sleep 1800
+            for i in {1..60}; do
+              sleep 30
+              check_processes
+            done
           done
 
       - name: Rerun workflow if failed
