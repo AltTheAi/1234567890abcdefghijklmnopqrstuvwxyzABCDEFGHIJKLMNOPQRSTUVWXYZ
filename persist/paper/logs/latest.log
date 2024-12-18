@@ -612,3 +612,375 @@
 [22:35:56] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=27.172941619768405,y=64.20000004768372,z=19.495606979443316,pitch=16.949944,yaw=97.500084}
 [22:35:56] [Server thread/INFO]: Total blocks changed: 0
 [22:35:56] [Server thread/INFO]: Storm set in world.
+[22:35:56] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=26.19410840385037,y=64.57493333290162,z=19.17954490536084,pitch=17.849941,yaw=110.55009}
+[22:35:56] [Server thread/INFO]: Total blocks changed: 0
+[22:35:56] [Server thread/INFO]: Storm set in world.
+[22:35:56] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=25.257848048932747,y=65.69985490349761,z=18.811632560089805,pitch=19.199938,yaw=130.5001}
+[22:35:56] [Server thread/INFO]: Total blocks changed: 0
+[22:35:56] [Server thread/INFO]: Storm set in world.
+[22:35:56] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=24.605933917973616,y=66.4498410962328,z=18.454073171139978,pitch=20.699934,yaw=142.95009}
+[22:35:56] [Server thread/INFO]: Total blocks changed: 0
+[22:35:56] [Server thread/INFO]: Storm set in world.
+[22:35:56] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=23.95520439304776,y=67.19983614469096,z=18.00717928292718,pitch=20.849934,yaw=144.00005}
+[22:35:56] [Server thread/INFO]: Total blocks changed: 0
+[22:35:56] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=23.307424020888654,y=67.94983438120939,z=17.48487651427854,pitch=20.999933,yaw=144.75002}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=22.67216098544372,y=68.6998337654295,z=16.893611368876122,pitch=23.399927,yaw=151.80002}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=22.17034997108057,y=69.44983356282223,z=16.22642704136128,pitch=23.999926,yaw=153.15}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=21.814295999702637,y=70.1998335089571,z=15.492434397537105,pitch=24.149925,yaw=153.15}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=21.541237031300447,y=70.94983350863914,z=14.706912972663222,pitch=24.299925,yaw=153.15}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=21.229665535106403,y=71.54983352163771,z=13.889890144180265,pitch=24.449924,yaw=152.25003}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=20.698603866482276,y=71.96443353333053,z=12.619843865114028,pitch=25.649921,yaw=151.65005}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=20.31008156606711,y=72.54508955556057,z=11.749544214453081,pitch=25.649921,yaw=151.65005}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:57] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=19.899461973755315,y=73.23412574263686,z=10.864119122511893,pitch=25.649921,yaw=151.65005}
+[22:35:57] [Server thread/INFO]: Total blocks changed: 0
+[22:35:57] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=19.470543612969177,y=73.96217878905782,z=9.966168651924574,pitch=25.649921,yaw=151.65005}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=19.026472041136017,y=74.70427790484284,z=9.057845914682545,pitch=25.649921,yaw=151.65005}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.673430644949242,y=75.45143360559894,z=8.125449755413008,pitch=24.449923,yaw=151.05003}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.436063225794694,y=76.20040967694463,z=7.170422950804902,pitch=26.549917,yaw=151.95001}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.293827497456277,y=76.95004108170257,z=6.196456877867539,pitch=29.09991,yaw=151.20004}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.22882761509929,y=77.69990840648892,z=5.206354738278388,pitch=29.69991,yaw=150.90005}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.22719397247012,y=78.44986066248549,z=4.202720678736974,pitch=29.999908,yaw=150.75006}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.277306688171315,y=79.19984349371774,z=3.1876758057750694,pitch=31.799904,yaw=150.60007}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.370152963846113,y=79.94983733203483,z=2.1631486439615055,pitch=32.84991,yaw=150.60007}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:58] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.498386902574783,y=80.69983513290248,z=1.1307691982972798,pitch=33.449917,yaw=150.60007}
+[22:35:58] [Server thread/INFO]: Total blocks changed: 0
+[22:35:58] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.655925366767466,y=81.44983436028832,z=0.09188727600152091,pitch=33.449917,yaw=150.60007}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.837730909895644,y=82.19983410122072,z=-0.952379347503183,pitch=33.449917,yaw=150.60007}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.930507580928616,y=82.7998340210694,z=-1.9851819232226355,pitch=33.449917,yaw=150.60007}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.915434612761644,y=83.01583399221492,z=-3.003511725688462,pitch=33.449917,yaw=150.60007}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.81105135322538,y=83.09359398182733,z=-4.009856623932155,pitch=33.59992,yaw=150.60007}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.629141776614603,y=83.12158757808778,z=-5.004186586933176,pitch=39.149925,yaw=148.05016}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.37881501846768,y=83.13166527274156,z=-5.986016658347239,pitch=39.44993,yaw=147.75017}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=18.071636432872133,y=83.13166527274156,z=-6.957372888877063,pitch=39.59993,yaw=147.75017}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=17.71737884625276,y=83.13166527274156,z=-7.9200557312707165,pitch=39.899933,yaw=147.75017}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:35:59] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=17.324135136638414,y=83.13166527274156,z=-8.875556140534815,pitch=40.349937,yaw=147.75017}
+[22:35:59] [Server thread/INFO]: Total blocks changed: 0
+[22:35:59] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=16.898607016711065,y=83.52166528823876,z=-9.825108776581502,pitch=40.49994,yaw=147.75017}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=16.446233024734376,y=83.75206529739404,z=-10.769665720945563,pitch=40.64994,yaw=147.60017}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=15.814475056982753,y=83.67086363633535,z=-12.037671033765847,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=15.249682898953674,y=82.90285517135892,z=-13.127554392271538,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.902009109711127,y=82.02933503704496,z=-13.777327252502584,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.572826627832502,y=80.87994225836093,z=-14.377872499738825,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.258956798464556,y=79.46560138171064,z=-14.937652358304366,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.9577673773716,y=77.79680434186875,z=-15.46367439656591,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.667078602976414,y=75.88362759338503,z=-15.961741582222407,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:00] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.525095082036861,y=74.83843617503254,z=-16.20182786698736,pitch=44.69997,yaw=146.55022}
+[22:36:00] [Server thread/INFO]: Total blocks changed: 0
+[22:36:00] [Server thread/INFO]: Storm set in world.
+[22:36:01] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.385085414612865,y=73.73574856358579,z=-16.43665935310234,pitch=44.69997,yaw=146.55022}
+[22:36:01] [Server thread/INFO]: Total blocks changed: 0
+[22:36:01] [Server thread/INFO]: Storm set in world.
+[22:36:01] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.895638510512407,y=73.0,z=-17.18439254386682,pitch=50.24999,yaw=139.20026}
+[22:36:01] [Server thread/INFO]: Total blocks changed: 0
+[22:36:01] [Server thread/INFO]: Storm set in world.
+[22:36:01] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.222832664649488,y=72.53584062504456,z=-17.933244220139922,pitch=55.200016,yaw=133.50037}
+[22:36:01] [Server thread/INFO]: Total blocks changed: 0
+[22:36:01] [Server thread/INFO]: Storm set in world.
+[22:36:01] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=11.881943543343743,y=71.40739540236494,z=-18.276936792525767,pitch=55.200016,yaw=133.50037}
+[22:36:01] [Server thread/INFO]: Total blocks changed: 0
+[22:36:01] [Server thread/INFO]: Storm set in world.
+[22:36:01] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=11.633951973132575,y=70.30543845175121,z=-18.51881762178527,pitch=59.400017,yaw=129.45041}
+[22:36:01] [Server thread/INFO]: Total blocks changed: 0
+[22:36:01] [Server thread/INFO]: Storm set in world.
+[22:36:01] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=11.37048901933343,y=68.936654946153,z=-18.76634216250912,pitch=59.400017,yaw=129.00043}
+[22:36:01] [Server thread/INFO]: Total blocks changed: 0
+[22:36:01] [Server thread/INFO]: Storm set in world.
+[22:36:01] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=11.093933515199813,y=68.0,z=-19.018190603872238,pitch=57.150013,yaw=128.10046}
+[22:36:01] [Server thread/INFO]: Total blocks changed: 0
+[22:36:01] [Server thread/INFO]: Storm set in world.
+[22:36:02] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=10.160345086982488,y=67.23152379758702,z=-19.776870553173687,pitch=56.100006,yaw=127.65046}
+[22:36:02] [Server thread/INFO]: Total blocks changed: 0
+[22:36:02] [Server thread/INFO]: Storm set in world.
+[22:36:02] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=9.789459964603656,y=67.41999998688698,z=-20.686307756113695,pitch=39.0,yaw=154.35048}
+[22:36:02] [Server thread/INFO]: Total blocks changed: 0
+[22:36:02] [Server thread/INFO]: Storm set in world.
+[22:36:02] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=9.62646807012086,y=68.39918708470515,z=-21.267901916868638,pitch=36.14997,yaw=165.00035}
+[22:36:02] [Server thread/INFO]: Total blocks changed: 0
+[22:36:02] [Server thread/INFO]: Storm set in world.
+[22:36:02] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=9.436394288450963,y=69.2072866266743,z=-21.975780249986357,pitch=36.299973,yaw=166.35036}
+[22:36:02] [Server thread/INFO]: Total blocks changed: 0
+[22:36:02] [Server thread/INFO]: Storm set in world.
+[22:36:02] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=9.110205356165952,y=69.07102320249717,z=-23.247047381925988,pitch=36.299973,yaw=166.35036}
+[22:36:02] [Server thread/INFO]: Total blocks changed: 0
+[22:36:02] [Server thread/INFO]: Storm set in world.
+[22:36:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.829862079891047,y=68.1344031797184,z=-24.380436700494727,pitch=31.799967,yaw=173.55038}
+[22:36:03] [Server thread/INFO]: Total blocks changed: 0
+[22:36:03] [Server thread/INFO]: Storm set in world.
+[22:36:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.668263830783626,y=67.41761954561873,z=-25.20515167325906,pitch=26.09998,yaw=-178.04965}
+[22:36:03] [Server thread/INFO]: Total blocks changed: 0
+[22:36:03] [Server thread/INFO]: Storm set in world.
+[22:36:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.546430583787545,y=66.67957741826936,z=-26.074858566551907,pitch=20.24999,yaw=-174.89969}
+[22:36:03] [Server thread/INFO]: Total blocks changed: 0
+[22:36:03] [Server thread/INFO]: Storm set in world.
+[22:36:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.46129658034043,y=65.9338822333501,z=-26.981577813266977,pitch=14.7,yaw=-175.34967}
+[22:36:03] [Server thread/INFO]: Total blocks changed: 0
+[22:36:03] [Server thread/INFO]: Storm set in world.
+[22:36:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.405962494658832,y=65.33543195366616,z=-27.918996709405604,pitch=14.7,yaw=-175.34967}
+[22:36:03] [Server thread/INFO]: Total blocks changed: 0
+[22:36:03] [Server thread/INFO]: Storm set in world.
+[22:36:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.363905629378436,y=65.07151538032552,z=-29.32255647199008,pitch=12.900004,yaw=-175.94965}
+[22:36:03] [Server thread/INFO]: Total blocks changed: 0
+[22:36:03] [Server thread/INFO]: Storm set in world.
+[22:36:03] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.335500346859492,y=65.01450940048395,z=-30.42068200226694,pitch=11.100007,yaw=-179.84953}
+[22:36:03] [Server thread/INFO]: Total blocks changed: 0
+[22:36:03] [Server thread/INFO]: Storm set in world.
+[22:36:04] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.308203823027682,y=65.00445773383433,z=-31.475943807444562,pitch=12.300004,yaw=179.10051}
+[22:36:04] [Server thread/INFO]: Total blocks changed: 0
+[22:36:04] [Server thread/INFO]: Storm set in world.
+[22:36:04] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.269474971818548,y=65.00445773383433,z=-30.36155222354166,pitch=10.350007,yaw=-176.24966}
+[22:36:04] [Server thread/INFO]: Total blocks changed: 0
+[22:36:04] [Server thread/INFO]: Storm set in world.
+[22:36:04] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.250013442034223,y=65.00445773383433,z=-29.31893094747741,pitch=10.050008,yaw=-175.34969}
+[22:36:04] [Server thread/INFO]: Total blocks changed: 0
+[22:36:04] [Server thread/INFO]: Storm set in world.
+[22:36:05] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.19041596617471,y=65.00445773383433,z=-28.13340388539285,pitch=6.750011,yaw=-170.8498}
+[22:36:05] [Server thread/INFO]: Total blocks changed: 0
+[22:36:05] [Server thread/INFO]: Storm set in world.
+[22:36:05] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.183140621996241,y=65.00445773383433,z=-26.86333569048552,pitch=3.9000092,yaw=-169.19981}
+[22:36:05] [Server thread/INFO]: Total blocks changed: 0
+[22:36:05] [Server thread/INFO]: Storm set in world.
+[22:36:05] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.42957201472883,y=65.00445773383433,z=-25.579932893724415,pitch=0.6000083,yaw=-177.44977}
+[22:36:05] [Server thread/INFO]: Total blocks changed: 0
+[22:36:05] [Server thread/INFO]: Storm set in world.
+[22:36:05] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.701396122198714,y=65.00445773383433,z=-24.51768815889042,pitch=0.6000083,yaw=178.35025}
+[22:36:05] [Server thread/INFO]: Total blocks changed: 0
+[22:36:05] [Server thread/INFO]: Storm set in world.
+[22:36:05] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.969008861564378,y=65.00445773383433,z=-23.44832620256509,pitch=1.5000083,yaw=172.50038}
+[22:36:05] [Server thread/INFO]: Total blocks changed: 0
+[22:36:05] [Server thread/INFO]: Storm set in world.
+[22:36:06] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=9.699999988079071,y=65.68845776101405,z=-23.30000001192093,pitch=17.250011,yaw=133.65056}
+[22:36:06] [Server thread/INFO]: Total blocks changed: 0
+[22:36:06] [Server thread/INFO]: Storm set in world.
+[22:36:06] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=9.908802758569836,y=66.7182018019324,z=-23.30000001192093,pitch=42.300007,yaw=128.55061}
+[22:36:06] [Server thread/INFO]: Total blocks changed: 0
+[22:36:06] [Server thread/INFO]: Storm set in world.
+[22:36:07] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=10.793128019961227,y=67.21275855502431,z=-23.074803997478984,pitch=63.60001,yaw=125.7006}
+[22:36:07] [Server thread/INFO]: Total blocks changed: 0
+[22:36:07] [Server thread/INFO]: Storm set in world.
+[22:36:07] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=11.834478628245614,y=67.24905359808038,z=-22.74938907314197,pitch=38.09999,yaw=108.30056}
+[22:36:07] [Server thread/INFO]: Total blocks changed: 0
+[22:36:07] [Server thread/INFO]: Storm set in world.
+[22:36:07] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.584692808966617,y=67.24905359808038,z=-23.47976085569315,pitch=53.39999,yaw=99.450554}
+[22:36:07] [Server thread/INFO]: Total blocks changed: 0
+[22:36:07] [Server thread/INFO]: Storm set in world.
+[22:36:08] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.150749784531742,y=67.24905359808038,z=-24.41465028318321,pitch=38.550003,yaw=100.80053}
+[22:36:08] [Server thread/INFO]: Total blocks changed: 0
+[22:36:08] [Server thread/INFO]: Storm set in world.
+[22:36:08] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.469689105268658,y=67.24905359808038,z=-25.398531745431644,pitch=38.4,yaw=85.3505}
+[22:36:08] [Server thread/INFO]: Total blocks changed: 0
+[22:36:08] [Server thread/INFO]: Storm set in world.
+[22:36:09] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.725593972208959,y=67.24905359808038,z=-26.07109719576357,pitch=29.700003,yaw=93.750496}
+[22:36:09] [Server thread/INFO]: Total blocks changed: 0
+[22:36:09] [Server thread/INFO]: Storm set in world.
+[22:36:09] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.551149301182061,y=67.24905359808038,z=-27.344846247489777,pitch=33.600006,yaw=91.95048}
+[22:36:09] [Server thread/INFO]: Total blocks changed: 0
+[22:36:09] [Server thread/INFO]: Storm set in world.
+[22:36:09] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.499139358618583,y=67.24905359808038,z=-28.385340560409375,pitch=33.600006,yaw=91.95048}
+[22:36:09] [Server thread/INFO]: Total blocks changed: 0
+[22:36:09] [Server thread/INFO]: Storm set in world.
+[22:36:09] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.469204436663619,y=67.24905359808038,z=-29.571794978712976,pitch=34.500015,yaw=90.45046}
+[22:36:09] [Server thread/INFO]: Total blocks changed: 0
+[22:36:09] [Server thread/INFO]: Storm set in world.
+[22:36:09] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.445165315390286,y=67.24905359808038,z=-30.72575680723079,pitch=34.350014,yaw=88.05044}
+[22:36:09] [Server thread/INFO]: Total blocks changed: 0
+[22:36:09] [Server thread/INFO]: Storm set in world.
+[22:36:10] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.422064526081268,y=67.24905359808038,z=-31.834675422355566,pitch=35.100018,yaw=90.450455}
+[22:36:10] [Server thread/INFO]: Total blocks changed: 0
+[22:36:10] [Server thread/INFO]: Storm set in world.
+[22:36:10] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.403111989959218,y=67.24905359808038,z=-32.88036949868718,pitch=35.70002,yaw=97.80048}
+[22:36:10] [Server thread/INFO]: Total blocks changed: 0
+[22:36:10] [Server thread/INFO]: Storm set in world.
+[22:36:11] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.586534870253965,y=67.24905359808038,z=-32.805899695896265,pitch=48.000023,yaw=85.65042}
+[22:36:11] [Server thread/INFO]: Total blocks changed: 0
+[22:36:11] [Server thread/INFO]: Storm set in world.
+[22:36:12] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.6987753489978,y=67.24905359808038,z=-32.52808527963122,pitch=57.60003,yaw=94.65044}
+[22:36:12] [Server thread/INFO]: Total blocks changed: 0
+[22:36:12] [Server thread/INFO]: Storm set in world.
+[22:36:12] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=15.713480742863124,y=67.24905359808038,z=-32.25243650233724,pitch=46.20002,yaw=144.75043}
+[22:36:12] [Server thread/INFO]: Total blocks changed: 0
+[22:36:12] [Server thread/INFO]: Storm set in world.
+[22:36:12] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=15.630927122269785,y=67.24905359808038,z=-30.9950099943642,pitch=51.30003,yaw=101.55045}
+[22:36:12] [Server thread/INFO]: Total blocks changed: 0
+[22:36:12] [Server thread/INFO]: Storm set in world.
+[22:36:13] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=15.411884267287647,y=67.24905359808038,z=-29.910478124476345,pitch=54.30004,yaw=112.95044}
+[22:36:13] [Server thread/INFO]: Total blocks changed: 0
+[22:36:13] [Server thread/INFO]: Storm set in world.
+[22:36:13] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=15.36220984974138,y=67.24905359808038,z=-28.725360563589614,pitch=57.300034,yaw=133.9505}
+[22:36:13] [Server thread/INFO]: Total blocks changed: 0
+[22:36:13] [Server thread/INFO]: Storm set in world.
+[22:36:14] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.417633718875486,y=67.24905359808038,z=-29.14896602437758,pitch=37.649994,yaw=149.70036}
+[22:36:14] [Server thread/INFO]: Total blocks changed: 0
+[22:36:14] [Server thread/INFO]: Storm set in world.
+[22:36:14] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.472782692304223,y=67.24905359808038,z=-28.7109356165193,pitch=28.49996,yaw=139.5004}
+[22:36:14] [Server thread/INFO]: Total blocks changed: 0
+[22:36:14] [Server thread/INFO]: Storm set in world.
+[22:36:15] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.469103813771595,y=67.24905359808038,z=-29.023588702914214,pitch=35.249958,yaw=118.05052}
+[22:36:15] [Server thread/INFO]: Total blocks changed: 0
+[22:36:15] [Server thread/INFO]: Storm set in world.
+[22:36:16] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=11.99654548368543,y=67.24905359808038,z=-28.072525657845688,pitch=49.19997,yaw=91.50052}
+[22:36:16] [Server thread/INFO]: Total blocks changed: 0
+[22:36:16] [Server thread/INFO]: Storm set in world.
+[22:36:16] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.414546199276504,y=67.24905359808038,z=-26.985529025739453,pitch=46.949974,yaw=81.150505}
+[22:36:16] [Server thread/INFO]: Total blocks changed: 0
+[22:36:16] [Server thread/INFO]: Storm set in world.
+[22:36:16] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.059610360256087,y=67.24905359808038,z=-26.017774276999653,pitch=38.99997,yaw=83.40051}
+[22:36:16] [Server thread/INFO]: Total blocks changed: 0
+[22:36:16] [Server thread/INFO]: Storm set in world.
+[22:36:17] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.069966537529988,y=67.24905359808038,z=-25.91426600391627,pitch=39.89998,yaw=93.90051}
+[22:36:17] [Server thread/INFO]: Total blocks changed: 0
+[22:36:17] [Server thread/INFO]: Storm set in world.
+[22:36:17] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.604465258863804,y=67.24905359808038,z=-26.80628024676996,pitch=38.549957,yaw=78.30052}
+[22:36:17] [Server thread/INFO]: Total blocks changed: 0
+[22:36:17] [Server thread/INFO]: Storm set in world.
+[22:36:18] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.670759616091885,y=67.24905359808038,z=-27.238034474027064,pitch=36.749958,yaw=105.30048}
+[22:36:18] [Server thread/INFO]: Total blocks changed: 0
+[22:36:18] [Server thread/INFO]: Storm set in world.
+[22:36:18] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.659411802597951,y=67.24905359808038,z=-28.342818599412173,pitch=42.449974,yaw=76.650475}
+[22:36:18] [Server thread/INFO]: Total blocks changed: 0
+[22:36:18] [Server thread/INFO]: Storm set in world.
+[22:36:19] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.864019552281736,y=67.24905359808038,z=-29.342473929442413,pitch=42.149975,yaw=92.25049}
+[22:36:19] [Server thread/INFO]: Total blocks changed: 0
+[22:36:19] [Server thread/INFO]: Storm set in world.
+[22:36:19] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=14.882431801173658,y=67.24905359808038,z=-29.21168367349576,pitch=45.300003,yaw=91.65048}
+[22:36:19] [Server thread/INFO]: Total blocks changed: 0
+[22:36:19] [Server thread/INFO]: Storm set in world.
+[22:36:21] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=13.773772987848059,y=67.24905359808038,z=-29.047999069092313,pitch=16.79999,yaw=117.300514}
+[22:36:21] [Server thread/INFO]: Total blocks changed: 0
+[22:36:21] [Server thread/INFO]: Storm set in world.
+[22:36:21] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=12.808421501861345,y=67.24905359808038,z=-29.31903810885884,pitch=53.249973,yaw=160.95052}
+[22:36:21] [Server thread/INFO]: Total blocks changed: 0
+[22:36:21] [Server thread/INFO]: Storm set in world.
+[22:36:22] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=11.783294478216527,y=67.24905359808038,z=-29.118237998801895,pitch=52.04996,yaw=163.35042}
+[22:36:22] [Server thread/INFO]: Total blocks changed: 0
+[22:36:22] [Server thread/INFO]: Storm set in world.
+[22:36:22] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=10.642668298236774,y=67.24905359808038,z=-28.834774138674817,pitch=48.599926,yaw=163.8004}
+[22:36:22] [Server thread/INFO]: Total blocks changed: 0
+[22:36:22] [Server thread/INFO]: Storm set in world.
+[22:36:22] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=9.577219205588452,y=67.24905359808038,z=-29.027753361611854,pitch=22.64991,yaw=151.35036}
+[22:36:22] [Server thread/INFO]: Total blocks changed: 0
+[22:36:22] [Server thread/INFO]: Storm set in world.
+[22:36:22] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=8.709847324644219,y=67.24905359808038,z=-29.678729337842803,pitch=21.599913,yaw=150.60039}
+[22:36:22] [Server thread/INFO]: Total blocks changed: 0
+[22:36:22] [Server thread/INFO]: Storm set in world.
+[22:36:23] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=7.789195820992387,y=67.24905359808038,z=-30.155872585739665,pitch=21.599913,yaw=150.75038}
+[22:36:23] [Server thread/INFO]: Total blocks changed: 0
+[22:36:23] [Server thread/INFO]: Storm set in world.
+[22:36:23] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=6.7620514549668345,y=67.24905359808038,z=-30.46232279001225,pitch=19.04992,yaw=163.95036}
+[22:36:23] [Server thread/INFO]: Total blocks changed: 0
+[22:36:23] [Server thread/INFO]: Storm set in world.
+[22:36:23] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=5.859214229635794,y=66.85905358258317,z=-30.656059771419365,pitch=17.849922,yaw=165.7503}
+[22:36:23] [Server thread/INFO]: Total blocks changed: 0
+[22:36:23] [Server thread/INFO]: Storm set in world.
+[22:36:23] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=5.150055842116665,y=65.89281354418824,z=-30.743883463454928,pitch=12.749934,yaw=167.70023}
+[22:36:23] [Server thread/INFO]: Total blocks changed: 0
+[22:36:23] [Server thread/INFO]: Storm set in world.
+[22:36:23] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=4.6900776795105585,y=64.80210566084742,z=-30.455897228421346,pitch=10.349939,yaw=169.65015}
+[22:36:23] [Server thread/INFO]: Total blocks changed: 0
+[22:36:23] [Server thread/INFO]: Storm set in world.
+[22:36:23] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=4.169745278345251,y=64.29205881654157,z=-29.731409465316485,pitch=-1.3500595,yaw=178.35008}
+[22:36:23] [Server thread/INFO]: Total blocks changed: 0
+[22:36:23] [Server thread/INFO]: Storm set in world.
+[22:36:24] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=3.484972002136841,y=64.93639760110808,z=-29.26463231624195,pitch=-4.6500607,yaw=-179.3999}
+[22:36:24] [Server thread/INFO]: Total blocks changed: 0
+[22:36:24] [Server thread/INFO]: Storm set in world.
+[22:36:24] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.9533799391771427,y=65.35363424885598,z=-28.483818616023036,pitch=5.399942,yaw=-175.34998}
+[22:36:24] [Server thread/INFO]: Total blocks changed: 0
+[22:36:24] [Server thread/INFO]: Storm set in world.
+[22:36:24] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.6882403186063346,y=65.36670258467589,z=-27.367133274164466,pitch=10.649939,yaw=-170.70007}
+[22:36:24] [Server thread/INFO]: Total blocks changed: 0
+[22:36:24] [Server thread/INFO]: Storm set in world.
+[22:36:24] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.7178316328140975,y=65.36670258467589,z=-26.36094539620082,pitch=10.049939,yaw=-170.85007}
+[22:36:24] [Server thread/INFO]: Total blocks changed: 0
+[22:36:24] [Server thread/INFO]: Storm set in world.
+[22:36:24] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.720642605923368,y=65.36670258467589,z=-25.353149859133627,pitch=7.649941,yaw=-170.55006}
+[22:36:24] [Server thread/INFO]: Total blocks changed: 0
+[22:36:24] [Server thread/INFO]: Storm set in world.
+[22:36:25] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.6985745564487127,y=65.36670258467589,z=-24.24382199012161,pitch=10.199938,yaw=-170.70006}
+[22:36:25] [Server thread/INFO]: Total blocks changed: 0
+[22:36:25] [Server thread/INFO]: Storm set in world.
+[22:36:25] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.720020252773411,y=65.36670258467589,z=-23.24089076573405,pitch=10.349937,yaw=-169.50008}
+[22:36:25] [Server thread/INFO]: Total blocks changed: 0
+[22:36:25] [Server thread/INFO]: Storm set in world.
+[22:36:25] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=3.001540351622313,y=65.36670258467589,z=-22.111094085310818,pitch=10.049938,yaw=-170.55003}
+[22:36:25] [Server thread/INFO]: Total blocks changed: 0
+[22:36:25] [Server thread/INFO]: Storm set in world.
+[22:36:25] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=3.2670096978118592,y=65.36670258467589,z=-21.045712297987514,pitch=10.049938,yaw=-170.55003}
+[22:36:25] [Server thread/INFO]: Total blocks changed: 0
+[22:36:25] [Server thread/INFO]: Storm set in world.
+[22:36:26] [Server thread/INFO]: Triggering apocalypse environment at: Location{world=CraftWorld{name=world},x=2.4151361827225872,y=65.36670258467589,z=-20.478094073242975,pitch=23.549934,yaw=-104.5499}
+[22:36:26] [Server thread/INFO]: Total blocks changed: 0
+[22:36:26] [Server thread/INFO]: Storm set in world.
