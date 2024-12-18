@@ -171,3 +171,5 @@ org.bukkit.command.CommandException: Cannot execute command 'message' in plugin 
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1345) ~[paper-1.21.3.jar:1.21.3-81-da71382]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:340) ~[paper-1.21.3.jar:1.21.3-81-da71382]
 	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[22:54:59] [Server thread/INFO]: Wirebit lost connection: Disconnected
+[22:54:59] [Server thread/INFO]: Wirebit left the game
