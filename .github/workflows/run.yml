@@ -44,12 +44,17 @@ jobs:
             curl \
             python3
 
-      - name: Install ngrok
+      - name: Install playit
         run: |
-          curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | sudo tee /usr/share/keyrings/ngrok-archive-keyring.asc >/dev/null
-          echo "deb [signed-by=/usr/share/keyrings/ngrok-archive-keyring.asc] https://ngrok-agent.s3.amazonaws.com buster main" | sudo tee /etc/apt/sources.list.d/ngrok.list
-          sudo apt-get update
-          sudo apt-get install -y ngrok
+          wget -O playit https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux
+          chmod +x playit
+
+      - name: Install tmate
+        run: |
+          wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz
+          tar -xvf tmate-2.4.0-static-linux-i386.tar.xz
+          mv tmate-2.4.0-static-linux-i386/tmate /usr/local/bin/
+          rm -rf tmate-2.4.0-static-linux-i386*
 
       - name: Install filebrowser
         run: |
@@ -71,7 +76,7 @@ jobs:
           fi
           
           # Setup directories
-          mkdir -p ~/.vnc ~/.config/{pcmanfm/default,xfce4/terminal,tint2,openbox,ngrok}
+          mkdir -p ~/.vnc ~/.config/{pcmanfm/default,xfce4/terminal,tint2,openbox}
           
           # VNC password
           echo '1234' | vncpasswd -f > ~/.vnc/passwd
@@ -144,49 +149,41 @@ jobs:
           # Configure filebrowser
           filebrowser config init
           filebrowser config set --address 0.0.0.0
-          filebrowser config set --port 9090
+          filebrowser config set --port 7001
           filebrowser config set --root /home/runner/work/persist
           filebrowser config set --auth.method=noauth
           filebrowser users add root 1234 --perm.admin
-          
-          # Configure ngrok
-          echo "version: 2
-          tunnels:
-            vnc:
-              proto: tcp
-              addr: 5901
-            filebrowser:
-              proto: tcp
-              addr: 9090
-            minecraft:
-              proto: tcp
-              addr: 25565" > ~/.config/ngrok/ngrok.yml
 
       - name: Start services and sync data
         env:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
           REPO: ${{ github.repository }}
-          NGROK_AUTHTOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
         run: |
-          # Configure ngrok
-          ngrok config add-authtoken $NGROK_AUTHTOKEN
+          # Start VNC on custom port
+          vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
           
-          # Start VNC
-          vncserver :1 -geometry 1280x800 -depth 24
-          
-          # Start filebrowser
+          # Start filebrowser on custom port
           filebrowser -d /home/runner/.filebrowser.db &
           
-          # Start ngrok (redirect output to a log file)
-          ngrok start --all > ngrok.log 2>&1 &
+          # Start tmate
+          tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
+          tmate -S /tmp/tmate.sock wait tmate-ready
+          tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
           
-          # Wait for ngrok to start and get URLs
+          # Start playit agent
+          ./playit start &
+          
+          # Wait for playit to start
           sleep 5
-          echo "Tunnel URLs:"
-          curl http://localhost:4040/api/tunnels | jq -r '.tunnels[].public_url'
+          
+          # Display connection info
+          echo "Port mappings:"
+          echo "VNC: 7000 → 35122"
+          echo "Filebrowser: 7001 → 35123"
+          echo "Tmate: 7002 → 35124"
+          echo "(Reserved): 7003 → 35125"
           
           commit_and_push() {
-            # Copy current state of persist directory
             mkdir -p persist
             cp -r /home/runner/work/persist/* persist/ 2>/dev/null || true
             
