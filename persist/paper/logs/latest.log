@@ -1542,3 +1542,6 @@
 [22:38:45] [Server thread/INFO]: PersonalPr0xy issued server command: /difficulty normal
 [22:38:45] [Server thread/INFO]: [PersonalPr0xy: The difficulty has been set to Normal]
 [22:39:59] [Server thread/INFO]: PersonalPr0xy issued server command: /nuke
+[22:40:20] [Server thread/INFO]: PersonalPr0xy has made the advancement [Monster Hunter]
+[22:40:34] [Server thread/INFO]: PersonalPr0xy issued server command: /setworldspawn
+[22:40:34] [Server thread/INFO]: [PersonalPr0xy: Set the world spawn point to 7, 62, -39 [0.0]]
