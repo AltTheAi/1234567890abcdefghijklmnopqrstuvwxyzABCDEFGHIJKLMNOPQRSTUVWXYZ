@@ -69,3 +69,11 @@
 [22:53:03] [RCON Listener #1/INFO]: Thread RCON Client /127.234.199.150 started
 [22:53:06] [RCON Client /127.234.199.150 #13/INFO]: Thread RCON Client /127.234.199.150 shutting down
 [22:53:06] [RCON Client /127.134.178.31 #12/INFO]: Thread RCON Client /127.134.178.31 shutting down
+[22:53:23] [User Authenticator #0/INFO]: UUID of player Wirebit is a3720f31-b110-3fd2-bff4-5f7998d2e767
+[22:53:24] [Server thread/INFO]: Wirebit joined the game
+[22:53:24] [Server thread/INFO]: Wirebit[/127.134.203.83:50693] logged in with entity id 91 at ([world]24.5, 63.0, 9.5)
+[22:53:40] [User Authenticator #0/INFO]: UUID of player PersonalPr0xy is 805c5f03-6960-381d-81dc-d4138ab3b758
+[22:53:41] [Server thread/INFO]: PersonalPr0xy joined the game
+[22:53:41] [Server thread/INFO]: PersonalPr0xy[/127.13.42.148:33313] logged in with entity id 291 at ([world]-35.3354031403286, 72.0, -21.840750745124883)
+[22:53:42] [Server thread/INFO]: Wirebit was slain by OP Zombie
+[22:53:47] [Server thread/INFO]: PersonalPr0xy issued server command: /plugins
