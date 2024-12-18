@@ -47,7 +47,7 @@ jobs:
       - name: Install playit
         run: |
           wget -O playit https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
-          chmod +x playit-linux-amd64
+          chmod +x playit
 
       - name: Install tmate
         run: |
@@ -171,7 +171,7 @@ jobs:
           tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
           
           # Start playit agent
-          ./playit-linux-amd64 start &
+          ./playit start &
           
           # Wait for playit to start
           sleep 5
