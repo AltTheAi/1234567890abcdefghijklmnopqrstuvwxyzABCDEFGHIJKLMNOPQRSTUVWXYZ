@@ -23,8 +23,13 @@ jobs:
 
       - name: Install packages
         run: |
-          echo 'PS1="\\[\\e[38;5;39m\\]╭─\\[\\e[38;5;39m\\][\\[\\e[38;5;220m\\]server14\\[\\e[38;5;39m\\]@\\[\\e[38;5;83m\\]gamedreams.eu\\[\\e[38;5;39m\\]]─[\\[\\e[38;5;208m\\]\\w\\[\\e[38;5;39m\\]]\\n\\[\\e[38;5;39m\\]╰─\\[\\e[38;5;208m\\]λ\\[\\e[0m\\] "' >> /root/.bashrc
+          sudo apt-get update
+          sudo apt-get install -y zsh fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
 
+          echo 'PS1="[%{$fg[blue]%}server14%{$reset_color%}@%{$fg[green]%}gamedreams.eu%{$reset_color%}]-%{$fg[yellow]%}%~%{$reset_color%}
+          λ "' > ~/.zshrc
+
+          sudo chsh -s $(which zsh) root
           sudo apt-get update
           sudo apt-get install -y fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
 
@@ -66,7 +71,9 @@ jobs:
           
           echo '[Configuration]
           FontName=DejaVu Sans Mono 12
-          MiscDefaultGeometry=80x24' > ~/.config/xfce4/terminal/terminalrc
+          MiscDefaultGeometry=80x24
+          Command=/usr/bin/zsh
+          RunCustomCommand=TRUE' > ~/.config/xfce4/terminal/terminalrc
           
           echo 'background_color = #000000 100
           panel_items = LTSC
@@ -119,7 +126,7 @@ jobs:
         run: |
           vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
           filebrowser -d /home/runner/.filebrowser.db &
-          tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
+          tmate -S /tmp/tmate.sock new-session -d "zsh"
           tmate -S /tmp/tmate.sock wait tmate-ready
           tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
           ./playit start &
