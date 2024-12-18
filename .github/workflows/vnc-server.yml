@@ -127,7 +127,7 @@ jobs:
           tmate -S /tmp/tmate.sock wait tmate-ready
           tmate -S /tmp/tmate.sock display -p "access tmate on #{tmate_ssh}"
 
-          echo "$PLAYIT_SECRET" > playit.toml
+          echo "$PLAYIT_SECRET" > ~/playit.toml
           ./playit-linux-amd64 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
           PLAYIT_PID=$!
           echo "playit started with PID $PLAYIT_PID"
