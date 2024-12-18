@@ -120,6 +120,7 @@ jobs:
           FINE_GRAINED_PAT: ${{ secrets.FINE_GRAINED_PAT }}
           PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
           REPO: ${{ github.repository }}
+          PUSH_ENABLED: "false"
         run: |
           start_vnc() {
             vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
@@ -154,6 +155,10 @@ jobs:
           }
 
           commit_and_push() {
+            if [ "$PUSH_ENABLED" != "true" ]; then
+              return 0
+            fi
+
             cd $GITHUB_WORKSPACE
             git add paper/
             git commit -m "Auto commit [no ci]" || true
