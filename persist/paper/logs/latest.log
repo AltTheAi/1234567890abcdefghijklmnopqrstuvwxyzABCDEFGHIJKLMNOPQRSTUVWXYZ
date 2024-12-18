@@ -61,3 +61,10 @@
 [22:33:17] [Server thread/INFO]: PersonalPr0xy[/127.13.42.148:34627] logged in with entity id 24 at ([world]9.5, 63.0, -2.5)
 [22:33:31] [Server thread/INFO]: PersonalPr0xy issued server command: /plugins
 [22:33:40] [Server thread/INFO]: PersonalPr0xy issued server command: /help Pr0xyArmyBuster
+[22:33:52] [Server thread/INFO]: PersonalPr0xy issued server command: /op
+[22:33:57] [Server thread/INFO]: PersonalPr0xy issued server command: /gamemode creative
+[22:33:57] [Server thread/INFO]: [PersonalPr0xy: Set own game mode to Creative Mode]
+[22:34:08] [Server thread/INFO]: PersonalPr0xy issued server command: /nuke
+[22:34:12] [Server thread/INFO]: PersonalPr0xy issued server command: /nuke
+[22:34:15] [Server thread/INFO]: PersonalPr0xy issued server command: /nuke 10
+[22:34:20] [Server thread/INFO]: PersonalPr0xy issued server command: /nuke
