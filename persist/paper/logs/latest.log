@@ -1537,3 +1537,7 @@
 [22:38:29] [Server thread/INFO]: [Pr0xyArmyBuster] 
 [22:38:29] [Server thread/INFO]: [Pr0xyArmyBuster] §5ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤMade by PersonalPr0xy & Zerx
 [22:38:29] [Server thread/INFO]: PersonalPr0xy: Reload complete.
+[22:38:41] [Server thread/INFO]: PersonalPr0xy issued server command: /difficulty peaceful
+[22:38:41] [Server thread/INFO]: [PersonalPr0xy: The difficulty has been set to Peaceful]
+[22:38:45] [Server thread/INFO]: PersonalPr0xy issued server command: /difficulty normal
+[22:38:45] [Server thread/INFO]: [PersonalPr0xy: The difficulty has been set to Normal]
