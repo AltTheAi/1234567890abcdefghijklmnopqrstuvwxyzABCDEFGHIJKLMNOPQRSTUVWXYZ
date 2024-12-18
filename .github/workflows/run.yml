@@ -97,6 +97,7 @@ jobs:
           while true; do
              sleep 60
           done' > ~/.vnc/xstartup
+          chmod +x ~/.vnc/xstartup
           
           echo '#!/bin/bash
           tint2 &
