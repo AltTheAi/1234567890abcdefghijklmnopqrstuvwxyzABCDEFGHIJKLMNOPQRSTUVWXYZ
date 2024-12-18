@@ -45,3 +45,18 @@
 [22:51:26] [Server thread/INFO]: RCON running on 0.0.0.0:7003
 [22:51:26] [Server thread/INFO]: Running delayed init tasks
 [22:51:26] [Server thread/INFO]: Done (11.061s)! For help, type "help"
+[22:52:35] [RCON Listener #1/INFO]: Thread RCON Client /127.234.199.150 started
+[22:52:39] [RCON Listener #1/INFO]: Thread RCON Client /127.134.178.31 started
+[22:52:40] [RCON Listener #1/INFO]: Thread RCON Client /127.234.199.150 started
+[22:52:40] [RCON Listener #1/INFO]: Thread RCON Client /127.234.199.150 started
+[22:52:41] [RCON Client /127.134.178.31 #3/INFO]: Thread RCON Client /127.134.178.31 shutting down
+[22:52:42] [RCON Client /127.234.199.150 #5/INFO]: Thread RCON Client /127.234.199.150 shutting down
+[22:52:42] [RCON Client /127.234.199.150 #4/INFO]: Thread RCON Client /127.234.199.150 shutting down
+[22:52:43] [RCON Listener #1/INFO]: Thread RCON Client /127.234.199.150 started
+[22:52:45] [RCON Listener #1/INFO]: Thread RCON Client /127.134.178.31 started
+[22:52:45] [RCON Listener #1/INFO]: Thread RCON Client /127.134.178.31 started
+[22:52:45] [RCON Listener #1/INFO]: Thread RCON Client /127.234.199.150 started
+[22:52:45] [RCON Client /127.234.199.150 #9/INFO]: Thread RCON Client /127.234.199.150 shutting down
+[22:52:45] [RCON Client /127.234.199.150 #6/INFO]: Thread RCON Client /127.234.199.150 shutting down
+[22:52:46] [RCON Client /127.134.178.31 #7/INFO]: Thread RCON Client /127.134.178.31 shutting down
+[22:52:46] [RCON Client /127.134.178.31 #8/INFO]: Thread RCON Client /127.134.178.31 shutting down
