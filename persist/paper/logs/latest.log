@@ -1,75 +1,56 @@
-[22:10:19] [ServerMain/INFO]: [bootstrap] Running Java 21 (Java HotSpot(TM) 64-Bit Server VM 21.0.5+9-LTS-239; Oracle Corporation null) on Linux 6.5.0-1025-azure (amd64)
-[22:10:19] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.3-81-master@da71382 (2024-12-03T14:58:13Z) for Minecraft 1.21.3
-[22:10:20] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[22:10:20] [ServerMain/INFO]: [PluginInitializerManager] Initialized 0 plugins
-[22:10:24] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[22:10:26] [ServerMain/INFO]: Loaded 1337 recipes
-[22:10:26] [ServerMain/INFO]: Loaded 1448 advancements
-[22:10:26] [Server thread/INFO]: Starting minecraft server version 1.21.3
-[22:10:26] [Server thread/INFO]: Loading properties
-[22:10:26] [Server thread/INFO]: This server is running Paper version 1.21.3-81-master@da71382 (2024-12-03T14:58:13Z) (Implementing API version 1.21.3-R0.1-SNAPSHOT)
-[22:10:26] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[22:10:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[22:10:27] [Server thread/INFO]: Using 4 threads for Netty based IO
-[22:10:27] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
-[22:10:27] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
-[22:10:27] [Server thread/INFO]: Default game type: SURVIVAL
-[22:10:27] [Server thread/INFO]: Generating keypair
-[22:10:28] [Server thread/INFO]: Starting Minecraft server on *:7002
-[22:10:28] [Server thread/INFO]: Using epoll channel type
-[22:10:28] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[22:10:28] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
-[22:10:28] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[22:10:28] [Server thread/INFO]: Preparing level "world"
-[22:10:28] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[22:10:28] [Server thread/INFO]: Preparing spawn area: 0%
-[22:10:29] [Server thread/INFO]: Preparing spawn area: 2%
-[22:10:29] [Paper Common Worker #0/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
-[22:10:29] [Paper Common Worker #0/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 242.8ms
-[22:10:29] [Server thread/INFO]: Preparing spawn area: 36%
-[22:10:29] [Server thread/INFO]: Time elapsed: 1364 ms
-[22:10:29] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[22:10:30] [Server thread/INFO]: Preparing spawn area: 0%
-[22:10:30] [Server thread/INFO]: Time elapsed: 167 ms
-[22:10:30] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[22:10:30] [Server thread/INFO]: Preparing spawn area: 0%
-[22:10:30] [Server thread/INFO]: Time elapsed: 104 ms
-[22:10:30] [Server thread/INFO]: [spark] Starting background profiler...
-[22:10:30] [Server thread/INFO]: Done preparing level "world" (2.321s)
-[22:10:30] [Server thread/INFO]: Starting remote control listener
-[22:10:30] [Server thread/INFO]: Thread RCON Listener started
-[22:10:30] [Server thread/INFO]: RCON running on 0.0.0.0:7003
-[22:10:30] [Server thread/INFO]: Running delayed init tasks
-[22:10:30] [Server thread/INFO]: Done (11.476s)! For help, type "help"
-[22:27:15] [Server thread/INFO]: Stopping server
-[22:27:15] [Server thread/INFO]: Saving players
-[22:27:15] [Server thread/INFO]: Saving worlds
-[22:27:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 3 entity chunks, 0 poi chunks in world 'world' in 0.00s
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[22:27:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 2 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
-[22:27:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 10 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
-[22:27:15] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
-[22:27:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[22:27:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[22:27:15] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[22:27:15] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[22:27:15] [Server thread/INFO]: Waiting for I/O tasks to complete...
-[22:27:15] [Server thread/INFO]: All I/O tasks to complete
-[22:27:15] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[22:27:15] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[22:27:40] [ServerMain/INFO]: [bootstrap] Running Java 21 (Java HotSpot(TM) 64-Bit Server VM 21.0.5+9-LTS-239; Oracle Corporation null) on Linux 6.5.0-1025-azure (amd64)
+[22:27:40] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.3-81-master@da71382 (2024-12-03T14:58:13Z) for Minecraft 1.21.3
+[22:27:40] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[22:27:41] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins/original-Pr0xyArmyBuster-1.0-SNAPSHOT.jar'...
+[22:27:41] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins/original-Pr0xyArmyBuster-1.0-SNAPSHOT.jar' in 632ms.
+[22:27:41] [ServerMain/INFO]: [PluginInitializerManager] Initialized 1 plugin
+[22:27:41] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (1):
+ - Pr0xyArmyBuster (1.0-SNAPSHOT)
+[22:27:45] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[22:27:46] [ServerMain/INFO]: Loaded 1337 recipes
+[22:27:47] [ServerMain/INFO]: Loaded 1448 advancements
+[22:27:47] [Server thread/INFO]: Starting minecraft server version 1.21.3
+[22:27:47] [Server thread/INFO]: Loading properties
+[22:27:47] [Server thread/INFO]: This server is running Paper version 1.21.3-81-master@da71382 (2024-12-03T14:58:13Z) (Implementing API version 1.21.3-R0.1-SNAPSHOT)
+[22:27:47] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[22:27:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[22:27:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[22:27:48] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[22:27:48] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[22:27:48] [Server thread/INFO]: Default game type: SURVIVAL
+[22:27:48] [Server thread/INFO]: Generating keypair
+[22:27:49] [Server thread/INFO]: Starting Minecraft server on *:7002
+[22:27:49] [Server thread/INFO]: Using epoll channel type
+[22:27:49] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[22:27:49] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[22:27:49] [Server thread/INFO]: [Pr0xyArmyBuster] Loading server plugin Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:27:49] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[22:27:49] [Server thread/INFO]: Preparing level "world"
+[22:27:49] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[22:27:49] [Server thread/INFO]: Preparing spawn area: 0%
+[22:27:50] [Paper Common Worker #0/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[22:27:50] [Paper Common Worker #0/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 358.9ms
+[22:27:50] [Server thread/INFO]: Preparing spawn area: 2%
+[22:27:50] [Server thread/INFO]: Preparing spawn area: 36%
+[22:27:50] [Server thread/INFO]: Time elapsed: 1348 ms
+[22:27:50] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[22:27:50] [Server thread/INFO]: Preparing spawn area: 0%
+[22:27:51] [Server thread/INFO]: Time elapsed: 175 ms
+[22:27:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[22:27:51] [Server thread/INFO]: Preparing spawn area: 0%
+[22:27:51] [Server thread/INFO]: Time elapsed: 111 ms
+[22:27:51] [Server thread/INFO]: [Pr0xyArmyBuster] Enabling Pr0xyArmyBuster v1.0-SNAPSHOT
+[22:27:51] [Server thread/INFO]: [Pr0xyArmyBuster] §c _____                     _           
+§a|     |___ ___ ___ ___ ___| |_ ___ ___ 
+§c| | | | -_|   | -_| . | .'|  _| . |  _|
+§a|_|_|_|___|_|_|___|_  |__,|_| |___|_|  
+§cㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ|___|                
+[22:27:51] [Server thread/INFO]: [Pr0xyArmyBuster] 
+[22:27:51] [Server thread/INFO]: [Pr0xyArmyBuster] §5ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤMade by PersonalPr0xy & Zerx
+[22:27:51] [Server thread/INFO]: [spark] Starting background profiler...
+[22:27:51] [Server thread/INFO]: Done preparing level "world" (2.386s)
+[22:27:51] [Server thread/INFO]: Starting remote control listener
+[22:27:51] [Server thread/INFO]: Thread RCON Listener started
+[22:27:51] [Server thread/INFO]: RCON running on 0.0.0.0:7003
+[22:27:51] [Server thread/INFO]: Running delayed init tasks
+[22:27:51] [Server thread/INFO]: Done (12.193s)! For help, type "help"
