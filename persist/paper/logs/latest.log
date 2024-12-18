@@ -54,3 +54,6 @@
 [22:27:51] [Server thread/INFO]: RCON running on 0.0.0.0:7003
 [22:27:51] [Server thread/INFO]: Running delayed init tasks
 [22:27:51] [Server thread/INFO]: Done (12.193s)! For help, type "help"
+[22:30:09] [User Authenticator #0/INFO]: Disconnecting PersonalPr0xy (/127.13.42.148:55177): Failed to verify username!
+[22:30:09] [User Authenticator #0/ERROR]: Username 'PersonalPr0xy' tried to join with an invalid session
+[22:30:09] [Server thread/INFO]: PersonalPr0xy (/127.13.42.148:55177) lost connection: Failed to verify username!
