@@ -27,7 +27,7 @@ jobs:
           sudo apt-get install -y fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
 
           wget -O playit https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
-          chmod +x playit
+          mv playit /usr/local/bin/
 
           wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-i386.tar.xz
           tar -xvf tmate-2.4.0-static-linux-i386.tar.xz
@@ -103,12 +103,12 @@ jobs:
           pcmanfm --desktop &' > ~/.config/openbox/autostart
           chmod +x ~/.config/openbox/autostart
           
-          filebrowser config init
-          filebrowser config set --address 127.0.0.1
-          filebrowser config set --port 7001
-          filebrowser config set --root $GITHUB_WORKSPACE/persist
-          filebrowser config set --auth.method=noauth
-          filebrowser users add root 1234 --perm.admin
+          filebrowser config init -d /root/.filebrowser/filebrowser.db
+          filebrowser config set -d /root/.filebrowser/filebrowser.db --address 0.0.0.0
+          filebrowser config set -d /root/.filebrowser/filebrowser.db --port 9090
+          filebrowser config set -d /root/.filebrowser/filebrowser.db --root /
+          filebrowser config set -d /root/.filebrowser/filebrowser.db --auth.method=noauth
+          filebrowser users add root 1234 --perm.admin -d /root/.filebrowser/filebrowser.db
 
       - name: Start services
         env:
@@ -116,11 +116,11 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
-          filebrowser -d $GITHUB_WORKSPACE/.filebrowser.db &
+          filebrowser -d /root/.filebrowser/filebrowser.db &
           tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
           tmate -S /tmp/tmate.sock wait tmate-ready
           tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
-          ./playit start &
+          playit start &
           
           START_TIME=$(date +%s)
           
