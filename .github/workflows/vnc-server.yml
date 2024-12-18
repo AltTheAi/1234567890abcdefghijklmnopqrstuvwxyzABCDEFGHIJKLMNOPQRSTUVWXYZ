@@ -125,7 +125,7 @@ jobs:
           filebrowser -d ~/.filebrowser.db &          
           tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
           tmate -S /tmp/tmate.sock wait tmate-ready
-          tmate -S /tmp/tmate.sock display -p "access tmate on #{tmate_ssh}"
+          tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
 
           echo "$PLAYIT_SECRET" > ~/playit.toml
           cd && ./playit-linux-amd64 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
