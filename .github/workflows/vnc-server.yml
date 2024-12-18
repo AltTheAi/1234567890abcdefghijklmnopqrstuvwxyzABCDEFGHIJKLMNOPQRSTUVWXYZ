@@ -108,12 +108,12 @@ jobs:
           pcmanfm --desktop &' > ~/.config/openbox/autostart
           chmod +x ~/.config/openbox/autostart
           
-          filebrowser config init -d ~/.filebrowser/filebrowser.db
-          filebrowser config set -d ~/.filebrowser/filebrowser.db --address 0.0.0.0
-          filebrowser config set -d ~/.filebrowser/filebrowser.db --port 9090
-          filebrowser config set -d ~/.filebrowser/filebrowser.db --root /
-          filebrowser config set -d ~/.filebrowser/filebrowser.db --auth.method=noauth
-          filebrowser users add runner 1234 --perm.admin -d ~/filebrowser.db
+          filebrowser config init -d ~/.filebrowser.db
+          filebrowser config set -d ~/.filebrowser.db --address 0.0.0.0
+          filebrowser config set -d ~/.filebrowser.db --port 9090
+          filebrowser config set -d ~/.filebrowser.db --root /
+          filebrowser config set -d ~/.filebrowser.db --auth.method=noauth
+          filebrowser users add runner 1234 --perm.admin -d ~/.filebrowser.db
 
       - name: Start services
         env:
@@ -121,7 +121,7 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
-          filebrowser -d ~/.filebrowser/filebrowser.db &
+          filebrowser -d ~/.filebrowser.db &
           tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
           tmate -S /tmp/tmate.sock wait tmate-ready
           tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
