@@ -122,9 +122,7 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           vncserver :1 -geometry 1280x800 -depth 24 -rfbport 7000
-          filebrowser -d ~/.filebrowser.db &
-          echo "filebrowser running on port 7000"
-          
+          filebrowser -d ~/.filebrowser.db &          
           tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
           tmate -S /tmp/tmate.sock wait tmate-ready
           tmate -S /tmp/tmate.sock display -p "access tmate on #{tmate_ssh}"
