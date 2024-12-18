@@ -1546,3 +1546,5 @@
 [22:40:34] [Server thread/INFO]: PersonalPr0xy issued server command: /setworldspawn
 [22:40:34] [Server thread/INFO]: [PersonalPr0xy: Set the world spawn point to 7, 62, -39 [0.0]]
 [22:41:40] [Server thread/INFO]: PersonalPr0xy issued server command: /message negr all
+[22:42:25] [Server thread/INFO]: PersonalPr0xy lost connection: Disconnected
+[22:42:25] [Server thread/INFO]: PersonalPr0xy left the game
