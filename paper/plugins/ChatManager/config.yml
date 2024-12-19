@@ -101,17 +101,17 @@ Anti_Advertising:
   # Websites that wont be blocked if said in chat, commands, or signs.
   Whitelist:
   - google.com
-  - https://discord.gg/yournetwork
-  - discord.gg/yournetwork
-  - https://yournetwork.net
-  - www.https://yournetwork.net
-  - yournetwork.net
-  - store.yournetwork.net
-  - https://store.yournetwork.net
-  - www.https://store.yournetwork.net
-  - youtube.com/c/yournetwork
-  - https://youtube.com/c/yournetwork
-  - play.yournetwork.net
+  - https://discord.gg/gamedreams
+  - discord.gg/gamedreams
+  - https://gamedreams.eu
+  - www.https://gamedreams.eu
+  - gamedreams.eu
+  - store.gamedreams.eu
+  - https://store.gamedreams.eu
+  - www.https://store.gamedreams.eu
+  - youtube.com/c/gamedreams
+  - https://youtube.com/c/gamedreams
+  - play.gamedreams.eu
 
 # =================================================================================================#
 # Prevent players from executing commands, or typing in chat until they move when they join your server.
@@ -685,9 +685,9 @@ MOTD:
   - ''
   - '                            &a&lSURVIVAL &f&lSERVER'
   - ''
-  - ' #7289da[&lDISCORD#7289da]&8: #7289da&nᴅɪꜱᴄᴏʀᴅ.ɢɢ/ʏᴏᴜʀɴᴇᴛᴡᴏʀᴋ'
-  - ' &6[&lWEBSITE&6]&8: &6&nʏᴏᴜʀɴᴇᴛᴡᴏʀᴋ.ɴᴇᴛ'
-  - ' #ffff99[&lSTORE#ffff99]&8: #ffff99&nꜱᴛᴏʀᴇ.ʏᴏᴜʀɴᴇᴛᴡᴏʀᴋ.ɴᴇᴛ'
+  - ' #7289da[&lDISCORD#7289da]&8: #7289da&nᴅɪꜱᴄᴏʀᴅ.ɢɢ/ɢᴀᴍᴇᴅʀᴇᴀᴍs'
+  - ' &6[&lWEBSITE&6]&8: &6&nɢᴀᴍᴇᴅʀᴇᴀᴍs.ᴇᴜ'
+  - ' #ffff99[&lSTORE#ffff99]&8: #ffff99&nꜱᴛᴏʀᴇ.ɢᴀᴍᴇᴅʀᴇᴀᴍs.ᴇᴜ'
   - ''
   - '&a&m                                                                                 &r'
 

@@ -85,7 +85,7 @@ Tags:
       - "&7Tag for beginners."
       - "&7Preview: &f{TAG}"
       - ""
-      - "&cPurchase at &bstore.yournetwork.net"
+      - "&cPurchase at &bstore.gamedreams.eu"
       Unlocked:
       - "&7Tag for beginners."
       - "&7Preview: &f{TAG}"
@@ -96,7 +96,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&aSelected."
-    No-permission-message: "&cYou don't own this tag. Purchase it on &bstore.yournetwork.net&c!"
+    No-permission-message: "&cYou don't own this tag. Purchase it on &bstore.gamedreams.eu&c!"
     Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
   rekt-tag:
     Material: ENDER_PEARL
@@ -122,7 +122,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&aSelected."
-    No-permission-message: "&cThis tag requires &a[VIP] &crank. Purchase on &bstore.yournetwork.net&c!"
+    No-permission-message: "&cThis tag requires &a[VIP] &crank. Purchase on &bstore.gamedreams.eu&c!"
     Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
   knight-tag:
     Material: CUSTOM_HEAD
@@ -137,19 +137,19 @@ Tags:
       - "&7Tag for the best warriors."
       - "&7Preview: &f{TAG}"
       - " "
-      - "&cPurchase at &bstore.yournetwork.net"
+      - "&cPurchase at &bstore.gamedreams.eu"
       Unlocked:
       - "&7Tag for the best warriors."
       - "&7Preview: &f{TAG}"
       - " "
-      - "&aPurchased on store.yournetwork.net"
+      - "&aPurchased on store.gamedreams.eu"
       - "&eClick to select."
       Selected:
       - "&7Tag for the best warriors."
       - "&7Preview: &f{TAG}"
       - " "
       - "&aSelected."
-    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.gamedreams.eu&c!"
     Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
   magic-tag:
     Material: CUSTOM_HEAD
@@ -227,7 +227,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&aSelected."
-    No-permission-message: "&cYou need &6[MVP++]&c to use this tag. Purchase it at &bstore.yournetwork.net&c!"
+    No-permission-message: "&cYou need &6[MVP++]&c to use this tag. Purchase it at &bstore.gamedreams.eu&c!"
     Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
   kawaii-kiss-tag:
     Material: CUSTOM_HEAD
@@ -269,7 +269,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&cReward claimable once your"
-      - "&creach YourNetwork Level 10."
+      - "&creach GameDreams Level 10."
       Unlocked:
       - "&7Tags for Kings!"
       - "&7Preview: &f{TAG}"
@@ -295,7 +295,7 @@ Tags:
       - "&7Tags for robots!"
       - "&7Preview: &f{TAG}"
       - " "
-      - "&cPurchase at &bstore.yournetwork.net&c!"
+      - "&cPurchase at &bstore.gamedreams.eu&c!"
       Unlocked:
       - "&7Tags for robots!"
       - "&7Preview: &f{TAG}"
@@ -306,7 +306,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&aSelected."
-    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.gamedreams.eu&c!"
     Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
   miner-tag:
     Material: DIAMOND_PICKAXE
@@ -321,7 +321,7 @@ Tags:
       - "&7Tags for miners!"
       - "&7Preview: &f{TAG}"
       - " "
-      - "&cPurchase at &bstore.yournetwork.net&c!"
+      - "&cPurchase at &bstore.gamedreams.eu&c!"
       Unlocked:
       - "&7Tags for miners!"
       - "&7Preview: &f{TAG}"
@@ -332,7 +332,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&aSelected."
-    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.gamedreams.eu&c!"
     Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
   geek-tag:
     Material: CUSTOM_HEAD
@@ -347,7 +347,7 @@ Tags:
       - "&7Tags for Geeks!"
       - "&7Preview: &f{TAG}"
       - " "
-      - "&cPurchase at &bstore.yournetwork.net&c!"
+      - "&cPurchase at &bstore.gamedreams.eu&c!"
       Unlocked:
       - "&7Tags for Geeks!"
       - "&7Preview: &f{TAG}"
@@ -358,7 +358,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&aSelected."
-    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.yournetwork.net&c!"
+    No-permission-message: "&cYou don't own this tag. Purchase on &bstore.gamedreams.eu&c!"
     Not-enough-money-message: "&cYou don't have enough money to purchase this tag!"
   idk-tag:
     Material: RANDOM
@@ -373,7 +373,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&cReward claimable once your"
-      - "&creach YourNetwork Level 10."
+      - "&creach GameDreams Level 10."
       Unlocked:
       - "&7Tags for IDK!"
       - "&7Preview: &f{TAG}"
@@ -400,7 +400,7 @@ Tags:
       - "&7Preview: &f{TAG}"
       - " "
       - "&cReward claimable once your"
-      - "&creach YourNetwork Level 15."
+      - "&creach GameDreams Level 15."
       Unlocked:
       - "&7Tags for lennys!"
       - "&7Preview: &f{TAG}"

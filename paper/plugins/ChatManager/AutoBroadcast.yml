@@ -12,35 +12,35 @@ Auto_Broadcast:
       &r                                                  &r
     Messages:
     - |2-
-                          &a&lWELCOME TO YOURNETWORK!
+                          &a&lWELCOME TO GAMEDREAMS!
       &f                                &3{player}!
       &f                      Do you need help? &b/help&f!
-      &b                      &ndiscord.yournetwork.net
+      &b                      &ndiscord.gamedreams.eu
     - |2-
                                   &a&lJOIN A JOBS!
       &f                                 &3Salary!
       &f                  Join a jobs for more income! &b/jobs&f!
-      &b                      &ndiscord.yournetwork.net
+      &b                      &ndiscord.gamedreams.eu
     - |2-
-                            &a&lVOTE FOR YOURNETWORK!
+                            &a&lVOTE FOR GAMEDREAMS!
       &f                              &3Vote Support!
       &f                  Get more rewards by voting! &b/vote&f!
-      &b                      &ndiscord.yournetwork.net
+      &b                      &ndiscord.gamedreams.eu
     - |2-
                                &a&lHELP-OP SUPPORT!
       &f                              &3Urgent Staff!
       &f            Found an critical issue? &b/helpop &3<message>&f!
-      &b                      &ndiscord.yournetwork.net
+      &b                      &ndiscord.gamedreams.eu
     - |2-
                              &a&lRULES & AGREEMENTS!
       &f                              &3Prevent Warn!
       &f                 Have you read our rules? &b/rules&f!
-      &b                      &ndiscord.yournetwork.net
+      &b                      &ndiscord.gamedreams.eu
     - |2-
-                            &a&lYOURNETWORK STORE!
+                            &a&lGAMEDREAMS STORE!
       &f                                &3:Tada:!
       &f                   Visit our store at: &b/store&f!
-      &b                      &nstore.yournetwork.net
+      &b                      &nstore.gamedreams.eu
     sound:
       toggle: true
       value: ENTITY_VILLAGER_AMBIENT
@@ -63,15 +63,15 @@ Auto_Broadcast:
     Messages:
       BUILD_nether:
       - |2-
-                              #FF0000&lYOURNETWORK STORE!
+                              #FF0000&lGAMEDREAMS STORE!
         &f                                &a:Tada:!
         &f                   Visit our store at: &a/store&f!
-        &a                      &nstore.yournetwork.net
+        &a                      &nstore.gamedreams.eu
       - |2-
                                  #FF0000&lRULES & AGREEMENTS!
         &f                                &aPrevent Warn!
         &f                   Have you read our rules? &a/rules&f!
-        &a                      &ndiscord.yournetwork.net
+        &a                      &ndiscord.gamedreams.eu
     sound:
       toggle: true
       value: UI_BUTTON_CLICK
