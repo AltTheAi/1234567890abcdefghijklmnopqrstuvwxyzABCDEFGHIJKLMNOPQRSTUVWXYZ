@@ -29,7 +29,7 @@ jobs:
           source ~/.bashrc
           
           sudo apt-get update
-          sudo apt-get install -y fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
+          sudo apt-get install -y screen fonts-dejavu-core xterm xarchiver feh htop openbox obconf tint2 xfce4-terminal pcmanfm tigervnc-standalone-server tigervnc-common neofetch falkon nano vim curl python3
 
           wget -O ~/playit-linux-amd64 https://github.com/playit-cloud/playit-agent/releases/download/v0.15.26/playit-linux-amd64
           chmod +x ~/playit-linux-amd64
@@ -127,9 +127,9 @@ jobs:
           }
 
           start_paper() {
-            cd $GITHUB_WORKSPACE/paper
-            java -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -Xms16G -Xmx16G -jar paper.jar nogui 2>&1 | sed '/login:/s/.*/<REDACTED>/' &
-            PAPER_PID=$!
+            cd $GITHUB_WORKSPACE/persist/paper
+            screen -dmS minecraft java -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -Xms16G -Xmx16G -jar paper.jar nogui
+            PAPER_PID=$(screen -ls | grep minecraft | awk '{print $1}' | cut -d. -f1)
             echo "Paper started with PID $PAPER_PID"
           }
 
