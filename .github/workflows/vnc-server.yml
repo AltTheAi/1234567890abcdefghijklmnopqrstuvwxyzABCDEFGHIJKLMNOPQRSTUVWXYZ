@@ -147,11 +147,12 @@ jobs:
           }
 
           start_tmate() {
-            tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
-            tmate -S /tmp/tmate.sock wait tmate-ready
-            tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
-            TMATE_PID=$!
-            echo "Tmate started with PID $TMATE_PID"
+              tmate -S /tmp/tmate.sock new-session -d "bash --noprofile"
+              tmate -S /tmp/tmate.sock wait tmate-ready
+              tmate -S /tmp/tmate.sock display -p "#{tmate_ssh}"
+              ps aux | grep 'tmate -S' | grep -v grep | awk '{print $2}' > /tmp/tmate.pid
+              TMATE_PID=$(cat /tmp/tmate.pid)
+              echo "Tmate started with PID $TMATE_PID"
           }
 
           commit_and_push() {
@@ -185,14 +186,17 @@ jobs:
          
           while true; do
             if ! kill -0 $PAPER_PID 2>/dev/null; then
+              echo "Paper died, restarting..."
               start_paper
             fi
 
             if ! kill -0 $PLAYIT_PID 2>/dev/null; then
+              echo "Playit died, restarting..."
               start_playit
             fi
 
-            if ! kill -0 $TMATE_PID 2>/dev/null; then
+            if ! kill -0 $TMATE_PID 2>/dev/null || ! test -e /tmp/tmate.sock; then
+              echo "Tmate session died, restarting..."
               start_tmate
             fi
 
