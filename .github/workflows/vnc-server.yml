@@ -51,7 +51,7 @@ jobs:
           chmod 600 ~/.vnc/passwd
           
           mkdir -p ~/Pictures
-          curl https://i.imgur.com/WjEkMGx.png -o ~/Pictures/wallpaper.png
+          curl https://i.imgur.com/s5KMeNv.png -o ~/Pictures/wallpaper.png
           
           echo '[*]
           wallpaper_mode=stretch
